@@ -1,0 +1,461 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Wadaigudem, Yadadri Branch - St. Jude's Academy</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#f8f9ff",
+                        "outline-variant": "#c5c6d0",
+                        "secondary-container": "#feae2c",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#d3e4fe",
+                        "primary-fixed": "#dae2ff",
+                        "on-tertiary-fixed": "#2e1500",
+                        "on-primary": "#ffffff",
+                        "on-background": "#0b1c30",
+                        "outline": "#757780",
+                        "surface-container-low": "#eff4ff",
+                        "secondary": "#835500",
+                        "error": "#ba1a1a",
+                        "surface-tint": "#4b5d8d",
+                        "primary-container": "#1a2d5a",
+                        "surface-container": "#e5eeff",
+                        "on-secondary-fixed": "#291800",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#44464f",
+                        "on-secondary-fixed-variant": "#633f00",
+                        "on-primary-container": "#8495c9",
+                        "tertiary-fixed-dim": "#f7ba86",
+                        "secondary-fixed-dim": "#ffb955",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#eaf1ff",
+                        "secondary-fixed": "#ffddb4",
+                        "surface-container-highest": "#d3e4fe",
+                        "primary": "#011744",
+                        "on-tertiary-fixed-variant": "#663d14",
+                        "surface-dim": "#cbdbf5",
+                        "on-primary-fixed-variant": "#334573",
+                        "on-primary-fixed": "#021946",
+                        "on-secondary-container": "#6b4500",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#ffdcc1",
+                        "surface-bright": "#f8f9ff",
+                        "tertiary-container": "#4a2600",
+                        "tertiary": "#2c1400",
+                        "surface-container-high": "#dce9ff",
+                        "primary-fixed-dim": "#b3c5fc",
+                        "on-surface": "#0b1c30",
+                        "inverse-primary": "#b3c5fc",
+                        "on-tertiary-container": "#c28b5b",
+                        "inverse-surface": "#213145",
+                        "error-container": "#ffdad6",
+                        "background": "#f8f9ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "margin-desktop": "40px",
+                        "container-max": "1280px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Inter"],
+                        "body-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "title-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fill-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        .ambient-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+        .hover-ambient-shadow:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+            transform: translateY(-2px);
+        }
+        
+        .card-border {
+            border: 1px solid #E2E8F0;
+        }
+
+        /* Motion System */
+        @keyframes zoomIn {
+            from { transform: scale(1); }
+            to { transform: scale(1.08); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes pulse-subtle {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.85; transform: scale(1.03); }
+        }
+
+        @keyframes icon-pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 0 5px rgba(254, 174, 44, 0.2); }
+            50% { box-shadow: 0 0 20px rgba(254, 174, 44, 0.6); }
+        }
+
+        .hero-zoom {
+            animation: zoomIn 20s ease-out forwards;
+        }
+
+        .float-anim {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .stagger-item {
+            opacity: 0;
+            transform: scale(0.95) translateY(10px);
+            transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .stagger-item.active {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+
+        .pulse-icon-hover:hover .material-symbols-outlined {
+            animation: icon-pulse 0.6s ease-in-out;
+        }
+
+        .apply-btn-glow {
+            animation: glow 3s infinite ease-in-out;
+        }
+
+        .nav-link-effect {
+            position: relative;
+        }
+        .nav-link-effect::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: currentColor;
+            transition: width 0.3s ease;
+        }
+        .nav-link-effect:hover::after {
+            width: 100%;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, ::before, ::after {
+                animation-delay: -1ms !important;
+                animation-duration: 1ms !important;
+                animation-iteration-count: 1 !important;
+                background-attachment: initial !important;
+                scroll-behavior: auto !important;
+                transition-duration: 0s !important;
+                transition-delay: 0s !important;
+            }
+            .reveal, .stagger-item {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface/90 backdrop-blur-md dark:bg-surface-container-lowest/90 text-primary dark:text-on-primary-fixed font-title-lg text-title-lg fixed top-0 w-full shadow-sm dark:shadow-none z-50 transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop h-20">
+<!-- Brand Logo -->
+<a class="flex items-center transition-transform hover:scale-105 duration-300" href="#">
+<img alt="Presidency Group of Schools Logo" class="h-14 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBla2Tqzky6C1hhAkEku96nr4FB-jEtUC9HloBz80aVKEfuO8G8EaNsGeq0v5K193guofkQkbFsmIvRrgIwlqLRLDdCPEAeagObEhLuRIPAviFXIs-6HrrXvmiTbHR0W-LCD0LiGeKxN6m2ZMdbk7kFDEkobHvPN8y_4KvgFUzVxe74m29dqW3Xwg5ozF2MnlZlOh9gC_MX-c0TWSuiquuwKqT6l8uxyl6xT48sVCMzSE_PjxRoMaCuTnZgbYkawWUA320PdWRiHnE">
+</a>
+<!-- Navigation Links (Desktop) -->
+<div class="hidden md:flex space-x-8 items-center h-full">
+<a class="nav-link-effect text-body-md font-medium" href="#hero">Home</a>
+<a class="nav-link-effect text-body-md font-medium" href="#details">Overview</a>
+<a class="nav-link-effect text-body-md font-medium" href="#gallery">Gallery</a>
+</div>
+<!-- Trailing Action -->
+<div class="flex items-center space-x-4">
+<button class="apply-btn-glow hidden md:block bg-secondary-container text-on-secondary-container font-label-md text-label-md py-2 px-6 rounded-lg hover:bg-secondary hover:text-on-secondary transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-md">
+                    Apply Now
+                </button>
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-20">
+<!-- Hero Section -->
+<section class="relative w-full h-[70vh] min-h-[500px] flex items-end pb-16 overflow-hidden" id="hero">
+<!-- Background Image -->
+<div class="absolute inset-0 w-full h-full overflow-hidden">
+<img alt="School Hero Image" class="hero-zoom w-full h-full object-cover" data-alt="A wide, sweeping architectural photograph of a modern, prestigious school campus building under bright, natural daylight. The facade features clean geometric lines, large glass windows reflecting the clear sky, and a combination of pristine white concrete and warm natural wood accents. The foreground includes a meticulously manicured green lawn with scattered, mature shade trees. The overall aesthetic is highly professional, clean, and aspirational, fitting for a top-tier educational institution's light-mode website." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4gRkA0MFVse7Qbwo7USiru4vxwm-_ajSZgB1qtMiugWAYGn5KM_9HDDvJMuI7UmbHc5-MQD-sH3ek6Kvvomn8trUie9tqGUzZcBRg6WIzMFO3l3LQIkGj4tlViZRF15E2FROgVNXVpQkVBOUXzqWq92ADUoNtgV0MXfsjLDhjBBqIOWBy6sWu8l-iizsJdGLssfloUCEqKYD3uQcCGsf_hy6Lm5JKnU_0uRy5SnHbAaXsesyoNF84rLnU6LebJ2dB56fYCYSTufw">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/40 to-transparent"></div>
+</div>
+<!-- Hero Content -->
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop float-anim">
+<div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-1.5 mb-6">
+<span class="material-symbols-outlined text-on-primary text-sm fill-icon">location_on</span>
+<span class="text-on-primary font-label-md text-label-md">Yadadri Bhuvanagiri District</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-primary mb-3 leading-tight">
+                    Wadaigudem, Yadadri
+                </h1>
+<p class="font-body-lg text-body-lg text-surface-container-highest max-w-2xl opacity-90">
+                    A premier campus offering a foundation of excellence, equipped with modern facilities to support comprehensive academic growth and student life.
+                </p>
+</div>
+</section>
+<!-- Branch Details Bento Grid -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-20 reveal active" id="details">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Curriculum Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 card-border hover-ambient-shadow transition-all duration-500 group flex flex-col items-start pulse-icon-hover">
+<div class="w-14 h-14 rounded-xl bg-surface-container-low text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl fill-icon">menu_book</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-2">Curriculum</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">SSC (State Syllabus)</p>
+</div>
+<!-- Grades Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 card-border hover-ambient-shadow transition-all duration-500 group flex flex-col items-start pulse-icon-hover">
+<div class="w-14 h-14 rounded-xl bg-surface-container-low text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl fill-icon">school</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-2">Grades</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Nursery to X Grade</p>
+</div>
+<!-- Programs Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 card-border hover-ambient-shadow transition-all duration-500 group flex flex-col items-start pulse-icon-hover">
+<div class="w-14 h-14 rounded-xl bg-surface-container-low text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl fill-icon">science</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-2">Programs</h3>
+<div class="flex flex-wrap gap-2 mt-2">
+<span class="bg-surface-container text-on-surface-variant font-label-md text-label-md px-4 py-1 rounded-full group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors duration-300">IIT/NEET</span>
+<span class="bg-surface-container text-on-surface-variant font-label-md text-label-md px-4 py-1 rounded-full group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors duration-300">Foundation</span>
+</div>
+</div>
+<!-- Contact Card -->
+<div class="bg-primary rounded-xl p-8 hover-ambient-shadow transition-all duration-500 flex flex-col items-start relative overflow-hidden group cursor-pointer">
+<div class="absolute -right-4 -top-4 w-32 h-32 bg-white/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+<div class="w-14 h-14 rounded-xl bg-white/10 text-on-primary flex items-center justify-center mb-6 relative z-10 group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl fill-icon">call</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-primary mb-2 relative z-10">Admissions Desk</h3>
+<a class="font-body-lg text-body-lg text-surface-container-high hover:text-white transition-colors mt-auto relative z-10 font-bold tracking-wide" href="tel:+918367413366">
+                        +91 8367413366
+                    </a>
+</div>
+</div>
+</section>
+<!-- Campus Gallery -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-20 border-t border-outline-variant/30" id="gallery">
+<div class="mb-12 reveal active">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-3">Campus Gallery</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl leading-relaxed">
+                    Explore the state-of-the-art facilities at our Wadaigudem branch designed to foster a safe, engaging, and comprehensive learning environment for all students.
+                </p>
+</div>
+<!-- Asymmetric Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 auto-rows-[280px]" id="gallery-grid">
+<!-- Main Large Feature Image -->
+<div class="stagger-item md:col-span-2 md:row-span-2 rounded-2xl overflow-hidden group relative card-border cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500 active">
+<img alt="Modern Classroom" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="A bright, modern classroom interior flooded with natural light from large floor-to-ceiling windows. The room features clean, organized rows of contemporary wooden desks and ergonomic chairs. A large interactive smartboard is mounted on a pristine white wall at the front. The color palette is light and airy, dominated by whites, light woods, and subtle accents of corporate navy blue on the display boards, reflecting a highly professional and rigorous academic setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk_53tdJMdWTa1tqvvcSt-iK2rIYgIBp4xKAot6IdqCmEExgxeHE6oYoe-_ONa49WVRtjsKVMCXmJ6pExU5k6col5bV4KypMKHgCBKIVFuV5o5uAxDRm3imbFiQ3enJc0AYzlw3H_gjC6SaEMSXA16w3udp1UQ6ogUGm0lbDWD99Ho-ykOaL3GydtVFCT9IzWhBIK2q_P4aCxDOK5Q05V5uscdsZ5M2JfTBsUBVrN1diMMcO7350O-1SW1-KfBHJ_Yhv8Mm9zOy8s">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+<div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+<h4 class="text-on-primary font-headline-md text-headline-md mb-2">Smart Classrooms</h4>
+<p class="text-on-primary/80 font-body-md">Technology-integrated learning environments for modern education.</p>
+</div>
+</div>
+</div>
+<!-- Secondary Image 1 -->
+<div class="stagger-item rounded-2xl overflow-hidden group relative card-border cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500 active">
+<img alt="Science Laboratory" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="A close-up, high-quality shot of a modern school science laboratory. Clean, white countertops line the room, equipped with pristine, modern scientific apparatus like microscopes and glass beakers. The lighting is bright and clinical, emphasizing safety and precision. The overall aesthetic is clean, structured, and conveys a serious commitment to STEM education within a prestigious institutional framework." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAH2ty7zvT_tKge0Fr2mwVuq4eRr9roB4_9nQT8cjrieGFu0wojyWC0LfWIIRF5vIcMJ-KWauDXB4jE4su6XcMj339eR-U54GIXSsMCucoR8N5xvbGb8bhl60uDlU7JUSJLoysotoURiNL9rM9rw88qapUnZb-kRYGtwv_4D5ecJTgx7TaTnOh7VfcRQnsxzYIl3uLCowzb0PrZ3DrxC6v1XnAP3GwqCfizoFpaffuBA59CwrJvgmr6ztu3PWPrSMCNHCadLwKEVvM">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+<h4 class="text-on-primary font-title-lg text-title-lg transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">Science Labs</h4>
+</div>
+</div>
+<!-- Secondary Image 2 -->
+<div class="stagger-item rounded-2xl overflow-hidden group relative card-border cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500 active">
+<img alt="Sports Facilities" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="An expansive, meticulously maintained outdoor school playground and sports field. The vibrant green turf is neatly lined for athletic activities. In the background, a section of the modern, white-facade school building is visible. The scene is bathed in bright, optimistic daylight, conveying a sense of healthy, active student life in a secure, premium campus environment." src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgcng9IjgiIGZpbGw9IiNlOGVhZWQiLz48cGF0aCBkPSJNMTcwIDEzMCBsMzAgNDAgbDIwLTE1IGw0MCA1NSBIMTQweiIgZmlsbD0iI2JkYzFjNiIvPjxjaXJjbGUgY3g9IjI1MCIgY3k9IjEyMCIgcj0iMTgiIGZpbGw9IiNiZGMxYzYiLz48L3N2Zz4=">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+<h4 class="text-on-primary font-title-lg text-title-lg transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">Sports &amp; Recreation</h4>
+</div>
+</div>
+<!-- Wide Feature Image Bottom -->
+<div class="stagger-item md:col-span-3 rounded-2xl overflow-hidden group relative card-border cursor-pointer h-[340px] shadow-sm hover:shadow-xl transition-all duration-500 active">
+<img alt="School Corridors" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="A wide perspective shot down a bright, immaculate hallway of a modern educational institution. The floors are highly polished, reflecting the ambient light from modern ceiling fixtures. Rows of clean, navy blue lockers line the pristine white walls. The composition emphasizes deep perspective and a sense of orderly, structured academic life, aligning with a high-end, corporate-level school design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBG7mmpopqRDj1_WjL0Tghj-R2jYLi2961X8LrQkzM3Yi5ttUeJRxl1k2nbqKRJdb4e8EtRv3ffWcVG-wOGGw-lS2h1PIm_SEb7UxFLKsMnPrdzlr8TFSvl4wJ0Hv5DC-b7HbEQMuTv7LYSpgT2zhkyyPQrV79yrBNpOrV-zwLK_m622ZhR0ZAuYZZEwSWcEW_dhJ-aw5Sh2nHgxndJtHBivi9jWKkwVHogOVSEJYIoQBJAOP5vNUOtgD7BkCrPaPJ55Hjco_5ogP4">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+<div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+<h4 class="text-on-primary font-headline-md text-headline-md mb-2">Campus Infrastructure</h4>
+<p class="text-on-primary/80 font-body-md">A world-class environment designed for focus, safety, and inspiration.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-surface-container-lowest w-full max-w-container-max mx-auto px-margin-desktop py-20 grid grid-cols-1 md:grid-cols-4 gap-gutter mt-16 reveal active">
+<!-- Brand Info -->
+<div class="flex flex-col col-span-1 md:col-span-1">
+<div class="mb-8">
+    <img alt="Presidency Group of Schools" class="h-20 w-auto object-contain mb-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ1OZjrAFx0RlgkZbIf-d-G_6sXbzXuHJ1OV6-Sd3epkWI23nGeKcHCWcayqA3MwvaT-uOLACJY_l2dXG9uDrfyJbPvdhL4mhkfhQShRh6dp5Gx4E3T8Z2dSjrpZKEIsm1DpIzK0tOBOpATahjQC6-d5Mu-WPGwwP86T3uTRaZ-dh5roFCQNSeyL59WU1awCmO0o85tgxLSQjikWl7N5UEhOEsIaGmFi27-TDScsfdHgd1aojAiYbjffpImtC4zv1YI2M0KrtsxVA">
+    <div class="space-y-4">
+        <p class="font-label-md text-label-md text-on-surface-variant font-medium uppercase tracking-wider">Get the JASS Learn App on Google Play</p>
+        <a class="inline-block transition-transform hover:scale-105 active:scale-95" href="#">
+            <img alt="Get it on Google Play" class="h-12 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxUtSg9Az36Moe2kbst_gatsX6-X4axlH-3CVa5Ot_F_n9s6dXI7xR57wPCSWkZ4-Hc-DOHsS7t_XIpGgIXY-e7vWN1cjEEE6dvz9s25iq7GAhg3eUyWsEC69OKC1WmIep63pr1oMNkftjXFcqPMm5UC1Qwd3_kHp1FVyTVzdwp7vIUcJ9I9g_o4pk7to07nz-zhHnTtPioQlH1ECy9QpgKQCsMdZ4Gw7sMWzJgcTXaHMf4hFigEnKhJro9_PgTIiwnXzOCx7vp5Q">
+        </a>
+    </div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant mt-auto opacity-70">
+    © 2024 St. Jude's Institutional Group. All rights reserved.
+</p>
+</div>
+<!-- Links Spacer for Layout -->
+<div class="hidden md:block"></div>
+<!-- Quick Links -->
+<div class="flex flex-col col-span-1">
+<h4 class="font-title-lg text-title-lg text-primary mb-6">Quick Links</h4>
+<ul class="space-y-4">
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant dark:text-outline hover:text-primary transition-all duration-300 inline-block hover:translate-x-1" href="#">Privacy Policy</a></li>
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant dark:text-outline hover:text-primary transition-all duration-300 inline-block hover:translate-x-1" href="#">Terms of Service</a></li>
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant dark:text-outline hover:text-primary transition-all duration-300 inline-block hover:translate-x-1" href="#">Campus Map</a></li>
+</ul>
+</div>
+<!-- Connect -->
+<div class="flex flex-col col-span-1">
+<h4 class="font-title-lg text-title-lg text-primary mb-6">Connect</h4>
+<ul class="space-y-4">
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant dark:text-outline hover:text-primary transition-all duration-300 inline-block hover:translate-x-1" href="#">Alumni Network</a></li>
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant dark:text-outline hover:text-primary transition-all duration-300 inline-block hover:translate-x-1" href="#">Careers</a></li>
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant dark:text-outline hover:text-primary transition-all duration-300 inline-block hover:translate-x-1" href="#">Contact Headquarters</a></li>
+</ul>
+</div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Intersection Observer for Entrance Animations
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        // Targeted reveal elements
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        // Staggered Entrance for Gallery Items
+        const staggerObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    // Get all stagger items in this section
+                    const items = entry.target.querySelectorAll('.stagger-item');
+                    items.forEach((item, i) => {
+                        setTimeout(() => {
+                            item.classList.add('active');
+                        }, i * 150); // 150ms delay between items
+                    });
+                    staggerObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        const gallerySection = document.getElementById('gallery');
+        if (gallerySection) staggerObserver.observe(gallerySection);
+
+        // Sticky Nav Transformation on Scroll
+        const nav = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2', 'shadow-md', 'bg-surface');
+                nav.classList.remove('h-20');
+                nav.classList.add('h-16');
+            } else {
+                nav.classList.remove('py-2', 'shadow-md');
+                nav.classList.add('h-20');
+                nav.classList.remove('h-16');
+            }
+        });
+    });
+</script>
+<div aria-hidden="true" data-snapdom-sandbox="true" id="snapdom-sandbox" style="position: absolute; left: -9999px; top: -9999px; width: 0px; height: 0px; overflow: hidden;"></div>
+
+
+
+</body></html>

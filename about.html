@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en" style="width: 1280px; height: 4380px; overflow: hidden; position: relative;">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>About Us | Presidency Group of Schools</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#e5eeff",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#663d14",
+                        "primary-fixed": "#dae2ff",
+                        "secondary-fixed-dim": "#ffb955",
+                        "secondary": "#835500",
+                        "on-primary-fixed": "#021946",
+                        "secondary-container": "#feae2c",
+                        "surface-container-highest": "#d3e4fe",
+                        "on-surface-variant": "#44464f",
+                        "outline-variant": "#c5c6d0",
+                        "primary-fixed-dim": "#b3c5fc",
+                        "on-secondary": "#ffffff",
+                        "inverse-primary": "#b3c5fc",
+                        "tertiary-container": "#4a2600",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#633f00",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-surface": "#0b1c30",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed": "#ffddb4",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#d3e4fe",
+                        "on-secondary-container": "#6b4500",
+                        "surface-bright": "#f8f9ff",
+                        "on-background": "#0b1c30",
+                        "tertiary-fixed": "#ffdcc1",
+                        "on-tertiary-fixed": "#2e1500",
+                        "inverse-surface": "#213145",
+                        "background": "#f8f9ff",
+                        "surface-tint": "#4b5d8d",
+                        "primary": "#011744",
+                        "surface-dim": "#cbdbf5",
+                        "primary-container": "#1a2d5a",
+                        "on-primary-container": "#8495c9",
+                        "on-primary-fixed-variant": "#334573",
+                        "tertiary": "#2c1400"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "margin-desktop": "40px",
+                        "container-max": "1280px",
+                        "base": "8px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Inter"],
+                        "title-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+        }
+
+        .active-nav-link {
+            border-bottom: 2px solid #835500;
+            /* Secondary gold */
+        }
+
+        .hero-pattern {
+            background-image: radial-gradient(circle at 2px 2px, #01174408 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+    <!-- TopNavBar -->
+    <header class="fixed top-0 w-full bg-surface dark:bg-surface-container-lowest shadow-sm z-50">
+        <div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop h-20">
+            <div class="flex items-center gap-4">
+                <img alt="St. Jude's Academy Presidency Group Logo" class="h-16 w-auto object-contain"
+                    src="https://lh3.googleusercontent.com/aida/ADBb0ug4cGWrjEkBgifnUW26cJne65llA5k5h8vtVwoeTUaMSjad7fF_q_NvnO4vC4yZ5jDciREBmyKteXcrLy0pqTvzJdiNVYYpza3Fk6D3PdAsh9UQMTrHnjQLfQo_U43Jd2hzmeLexeBm23UhMKWMy3vXZQIgQsZMZZ3i5OHRwpg8zNao5ecd5xBSXZ_K_T-ahCvjilCP-eUfOVEQPXSjusuJqJhttKKgu6rdYPgyC0Mrfd-e98lmampLWLk">
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg"
+                    href="#">Programs</a>
+                <a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-secondary font-title-lg text-title-lg"
+                    href="#">About Us</a>
+                <a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg"
+                    href="#">Contanct Us</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button
+                    class="text-on-secondary px-6 py-2.5 rounded-lg font-title-lg transition-all hover:bg-secondary-container hover:shadow-lg bg-[#051838]">
+                    Apply Now
+                </button>
+                <button class="md:hidden text-primary">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="mt-20">
+        <!-- Hero Section -->
+        <section class="relative py-24 md:py-32 overflow-hidden hero-pattern" style="background-color: #FDE936;">
+            <div
+                class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+                <div class="space-y-6">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 text-primary rounded-full font-label-md">
+                        <span class="material-symbols-outlined text-sm">school</span>
+                        Empowering Future Leaders
+                    </div>
+                    <h1 class="font-display-lg text-display-lg text-primary leading-tight">
+                        Legacy of Academic Excellence at Presidency Group
+                    </h1>
+                    <p class="font-body-lg text-body-lg max-w-xl text-on-background">At St. Jude's Academy, we cultivate
+                        an environment where potential meets opportunity, grooming students for a fast-moving global
+                        landscape while staying rooted in core human values.</p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a class="bg-primary text-on-primary px-8 py-3 rounded-lg font-title-lg shadow-md hover:translate-y-[-2px] transition-all"
+                            href="#mission">Explore Our Mission</a>
+                        <a class="border-2 border-primary text-primary px-8 py-3 rounded-lg font-title-lg hover:bg-primary/5 transition-all"
+                            href="#">View Campus Map</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="aspect-video rounded-xl overflow-hidden shadow-2xl border-4 border-white">
+                        <img class="w-full h-full object-cover"
+                            data-alt="A modern, prestigious academic building with large glass windows reflecting a clear blue sky. The architecture is sophisticated and professional, surrounded by manicured green lawns and vibrant flower beds. The lighting is warm and bright, capturing a sense of high-end educational luxury and institutional stability."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB13eiM5xYj2PLqcBSfpecdpUhYUmS1sii51fzpJpTypILeNd16kq1_uULR1Ebao2LBSbLXzIjnOSiml4U9BbOmWKV-nsjhJYNGpn00N9HEqOZa5S0aZqnZ-lIndpX7vo9FdlBYzo-jNdxq6DdjGe2rv5Edo74b0sTLgVBrxp3TyaljamY-pcP9VYExdl3EA2t3VFNYPTcaeJ6aGbJFsHgMYXTxs7YNHPGAXGxegnpdqCRozvkO2uoJL31EVzO927RN8ICtGjYRLg8">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 p-6 rounded-lg shadow-xl hidden md:block"
+                        style="background-color: #051838;">
+                        <p class="text-white font-bold text-2xl">20+ Years</p>
+                        <p class="text-white/80 text-sm">Educational Legacy</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Decorative Elements -->
+            <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -mr-32 -mt-32"></div>
+        </section>
+        <!-- Our Mission Section -->
+        <section class="py-24 bg-white" id="mission">
+            <div class="max-w-container-max mx-auto px-margin-desktop">
+                <div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="font-headline-lg text-headline-lg text-primary mb-6">Our Mission</h2>
+                    <div class="w-20 h-1 bg-secondary mb-8"></div>
+                    <p class="font-body-lg text-body-lg italic text-on-surface leading-relaxed">
+                        "Our aim is the vigorous pursuit of excellence in academics, sports, co-curricular activities
+                        &amp; character building. We endeavour to bring up the students so that they can reach the most
+                        promising potential in their life."
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                    <!-- Feature Cards -->
+                    <div
+                        class="bg-background p-8 rounded-xl border border-outline-variant hover:shadow-xl transition-all group">
+                        <div
+                            class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined">military_tech</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-4">Academic Rigor</h3>
+                        <p class="text-on-surface-variant font-body-md">Striving for the highest standards in education
+                            through innovative teaching methodologies and comprehensive curricula.</p>
+                    </div>
+                    <div
+                        class="bg-background p-8 rounded-xl border border-outline-variant hover:shadow-xl transition-all group">
+                        <div
+                            class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined">fitness_center</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-4">Sports &amp; Activities</h3>
+                        <p class="text-on-surface-variant font-body-md">Developing physical endurance and teamwork
+                            through a diverse range of sports and co-curricular programs.</p>
+                    </div>
+                    <div
+                        class="bg-background p-8 rounded-xl border border-outline-variant hover:shadow-xl transition-all group">
+                        <div
+                            class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined">psychology</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-4">Character Building</h3>
+                        <p class="text-on-surface-variant font-body-md">Nurturing ethical values and leadership skills
+                            to prepare students for the challenges of the real world.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Chairperson's Message -->
+        <section class="py-24 bg-surface-container-low">
+            <div class="max-w-container-max mx-auto px-margin-desktop">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm flex flex-col lg:flex-row items-stretch">
+                    <div class="lg:w-1/3 min-h-[400px]">
+                        <img alt="Mrs. Jayalaxmi Teegala, Chairperson" class="w-full h-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida/ADBb0uhJn4ftmAdtwog7Z8C9y5YOHKaTuPwhtLuz_Vw9KqDKBt80bRlRoSGF1nD8mkHyKCVxJARRxZQSp9Snk-mhXpofMFP9G9p4dm8uYjU8aP5lkRFmAE8WHCb1MmE3zucSs2CW0FS01kVpGKpe6-dVxJDG9j_V6JNiWhWTVz5hYnioF5Fz9nsCN7srXmEFBlnVN3MoGCX1Qe6kTbBq44kojxITriUbijziUx4IAebgamoVav2AjNXHOWWu9xg">
+                    </div>
+                    <div class="lg:w-2/3 p-12 md:p-16 flex flex-col justify-center">
+                        <div class="mb-8">
+                            <span
+                                class="text-secondary font-bold tracking-widest uppercase text-sm block mb-2">Leadership
+                                Perspective</span>
+                            <h2 class="font-headline-lg text-headline-lg text-primary">Message from Chairperson</h2>
+                            <p class="text-on-surface-variant mt-2 font-title-lg">Mrs. Jayalaxmi Teegala</p>
+                        </div>
+                        <blockquote class="border-l-4 border-secondary pl-6 mb-8 italic text-on-surface font-body-lg">
+                            “Learning is the only thing the mind never exhausts, never fears, and never regrets.” –
+                            Leonardo da Vinci
+                        </blockquote>
+                        <div class="space-y-4 font-body-md text-on-surface-variant leading-relaxed">
+                            <p class="">Having been a part of the education sector for over over two decades now, I
+                                firmly believe that quality of education plays a prominent role in the future of
+                                society, nation-building and overall development of humankind.</p>
+                            <p class="">It is crucial to build an excellent educational system to deliver such
+                                education, especially in rural areas. Only the best educational organisations can
+                                sustain the rapidly growing expectations of a fast-moving world.</p>
+                            <p class="">Today's parents are more quality inclined. They believe that only the finest
+                                schools can perfectly mould their children and prepare them to face the world without
+                                compromising their values.</p>
+                            <p class="">Keeping the contemporary global and national perspective in our mind, we strive
+                                to achieve excellence in the grooming and upbringing of a child to the best of their
+                                potential.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Core Values Bento Grid -->
+        <section class="py-24 bg-white">
+            <div class="max-w-container-max mx-auto px-margin-desktop">
+                <div class="text-center mb-16">
+                    <h2 class="font-headline-lg text-headline-lg text-primary mb-4">Our Core Values</h2>
+                    <p class="text-on-surface-variant font-body-lg">The pillars that define our institution's spirit.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[280px]">
+                    <div
+                        class="md:col-span-2 bg-primary p-8 rounded-xl flex flex-col justify-end text-on-primary group overflow-hidden relative">
+                        <span
+                            class="material-symbols-outlined absolute top-8 right-8 text-6xl opacity-10 group-hover:scale-110 transition-transform"
+                            style="font-variation-settings: 'FILL' 1;">star</span>
+                        <h3 class="font-headline-md text-headline-md mb-2">Academic Excellence</h3>
+                        <p class="font-body-md text-on-primary-container max-w-lg">Consistently pushing boundaries to
+                            deliver global standards of education through our CBSE and SSC curricula, ensuring
+                            competitive readiness for IIT and NEET.</p>
+                    </div>
+                    <div
+                        class="bg-surface-container p-8 rounded-xl flex flex-col justify-center text-center items-center">
+                        <div
+                            class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-primary mb-4 shadow-sm">
+                            <span class="material-symbols-outlined">landscape</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-2">Rural Development</h3>
+                        <p class="text-on-surface-variant font-body-md">Bridging the gap by bringing premium educational
+                            facilities to rural sectors.</p>
+                    </div>
+                    <div
+                        class="bg-[#eaf1ff] p-8 rounded-xl flex flex-col justify-center text-[#051838] items-center text-center">
+                        <div
+                            class="w-16 h-16 bg-[#051838]/10 rounded-full flex items-center justify-center text-[#051838] mb-4">
+                            <span class="material-symbols-outlined">diversity_3</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md mb-2">Social Integrity</h3>
+                        <p class="font-body-md">Fostering a sense of belonging and ethical responsibility toward the
+                            nation.</p>
+                    </div>
+                    <div
+                        class="md:col-span-2 bg-surface p-8 rounded-xl border border-outline-variant flex items-center gap-8 group">
+                        <div class="hidden lg:block w-48 h-full bg-surface-variant rounded-lg overflow-hidden">
+                            <img class="w-full h-full object-cover"
+                                data-alt="A detailed, macro close-up of a stack of academic books and a fountain pen resting on a dark wood surface. The scene is lit by warm, focused side lighting, creating deep shadows and highlights. The aesthetic is one of intellectual depth and traditional scholarship, emphasizing a commitment to lifelong learning."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJAMi3wnBIE4E0KajYBzPPXqSTUtn-EV5LLS9i6Lc24ZISsbXGYuw-7QeYWR-V3HEuXO34C2PTu_kN4MzRDMFNN7YTUVmhsqvSkccUjStaTI3eik3zfxtXjqrmpUQObBfmT9X8hQrfk33swxvmA5DY9xX78tmf_VTfxqbXO9h-joG0GtaEZvQaynoXZKRZXUaJ2PgrgHkDJlPzJm4TObq_nNEGwjc7w4lamZSAhOcYddxPqtp5OkjNNHLS_VDjOD5DeeiA6IczACo">
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-headline-md text-headline-md text-primary mb-2">Personalized Grooming</h3>
+                            <p class="text-on-surface-variant font-body-md">Every child is unique. Our mentors work
+                                closely with students to identify and nurture individual talents, preparing them for
+                                future leadership roles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call to Action -->
+        <section class="py-24 bg-primary text-on-primary overflow-hidden relative">
+            <div class="absolute inset-0 opacity-10">
+                <div class="w-full h-full hero-pattern"></div>
+            </div>
+            <div class="max-w-container-max mx-auto px-margin-desktop relative z-10 text-center">
+                <h2 class="font-display-lg text-display-lg mb-6">Join the Presidency Family</h2>
+                <p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl mx-auto mb-10">
+                    Secure a bright future for your child at Yadadri-Bhongir's premier educational institution.
+                    Admissions are now open for the upcoming academic session.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <button
+                        class="bg-secondary text-on-secondary px-10 py-4 rounded-lg font-bold text-lg shadow-lg hover:bg-secondary-container transition-all active:scale-95">
+                        Reserve Admission Now
+                    </button>
+
+                </div>
+                <div
+                    class="mt-16 pt-16 border-t border-white/10 flex flex-wrap justify-center gap-12 grayscale opacity-70">
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined">workspace_premium</span>
+                        <span class="font-label-md">CBSE Certified</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined">assignment_ind</span>
+                        <span class="font-label-md">SSC Affiliated</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined">science</span>
+                        <span class="font-label-md">IIT/NEET Ready</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-container dark:bg-surface-container-lowest py-16">
+        <div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+            <!-- Brand Info -->
+            <div class="space-y-6">
+                <img alt="Presidency Group Logo" class="h-20 w-auto"
+                    src="https://lh3.googleusercontent.com/aida/ADBb0ug4cGWrjEkBgifnUW26cJne65llA5k5h8vtVwoeTUaMSjad7fF_q_NvnO4vC4yZ5jDciREBmyKteXcrLy0pqTvzJdiNVYYpza3Fk6D3PdAsh9UQMTrHnjQLfQo_U43Jd2hzmeLexeBm23UhMKWMy3vXZQIgQsZMZZ3i5OHRwpg8zNao5ecd5xBSXZ_K_T-ahCvjilCP-eUfOVEQPXSjusuJqJhttKKgu6rdYPgyC0Mrfd-e98lmampLWLk">
+                <p class="font-body-md text-on-surface-variant">
+                    Pioneering education excellence in Yadadri-Bhongir for over 20 years.
+                </p>
+                <div class="flex gap-4">
+                    <a class="w-10 h-10 rounded-full bg-primary/5 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors"
+                        href="#">
+                        <span class="material-symbols-outlined">social_leaderboard</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-full bg-primary/5 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors"
+                        href="#">
+                        <span class="material-symbols-outlined">public</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Organization Links -->
+            <div>
+                <h4 class="font-title-lg text-primary mb-6">Organization Links</h4>
+                <ul class="space-y-4">
+                    <li class=""><a
+                            class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors font-body-md"
+                            href="#">About Us</a></li>
+                    <li class=""><a
+                            class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors font-body-md"
+                            href="#">News &amp; Events</a></li>
+                    <li class=""><a
+                            class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors font-body-md"
+                            href="#">Mandatory Files</a></li>
+                    <li class=""><a
+                            class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors font-body-md"
+                            href="#">Alumni Network</a></li>
+                    <li class=""><a
+                            class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors font-body-md"
+                            href="#">Careers</a></li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div>
+                <h4 class="font-title-lg text-primary mb-6">Contact Us</h4>
+                <ul class="space-y-4 font-body-md text-on-surface-variant">
+                    <li class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary">location_on</span>
+                        <span class="">Central Office, Yadadri-Bhongir, Telangana</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary">mail</span>
+                        <a class="hover:text-primary" href="mailto:chairman.jass@gmail.com">chairman.jass@gmail.com</a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary">call</span>
+                        <a class="hover:text-primary" href="tel:9010903366">+91 9010903366</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Get the App -->
+            <div>
+                <h4 class="font-title-lg text-primary mb-6">JASS Learn App</h4>
+                <p class="font-body-md text-on-surface-variant mb-6">Stay updated with student progress on the go.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.jass.live" target="_blank">
+                    <img alt="Google Play" class="h-12 w-auto grayscale hover:grayscale-0 transition-all"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFoz8ZzqWVSCXrRZcQRnLrSC8yABTNvDDS3_KAluvbc8yepauISM3S-uvl43UCjTKdYY_GekbHqpKLemgRL1HelOiLMuOuvZ_cjbL78wM3d9hAyXKCsg7cn80soIW8cAUx8OjInIGa5ADGP3PCrNmXWyC3V0lGVUQcgR0yZy7I5djJGDgrYCiALHJKeWvjvjb8Iq-M155toiAML2HjBYct_IHnimUkj9696rPv07tMgUVyqgo0k11Z-08wwRKSwFtOl4tCh_sV07znNQ">
+                </a>
+            </div>
+        </div>
+        <div
+            class="max-w-container-max mx-auto px-margin-desktop mt-16 pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="font-body-md text-on-surface-variant opacity-70">
+                © 2024 JASS Educational Services. All rights reserved.
+            </p>
+            <div class="flex gap-8">
+                <a class="text-on-surface-variant opacity-70 hover:opacity-100 font-body-md transition-opacity"
+                    href="#">Privacy Policy</a>
+                <a class="text-on-surface-variant opacity-70 hover:opacity-100 font-body-md transition-opacity"
+                    href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    <!-- FAB for Admission -->
+    <a class="fixed bottom-8 right-8 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all z-40 flex items-center justify-center"
+        href="https://wa.me/919010903366">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+    </a>
+    <script>
+        // Simple scroll behavior for the navbar
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-md');
+                header.classList.remove('shadow-sm');
+            } else {
+                header.classList.add('shadow-sm');
+                header.classList.remove('shadow-md');
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

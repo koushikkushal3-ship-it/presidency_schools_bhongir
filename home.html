@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en" style="">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Presidency Group of Schools, Bhongir</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#d3e4fe",
+                        "secondary": "#835500",
+                        "primary-container": "#1a2d5a",
+                        "on-secondary-fixed-variant": "#633f00",
+                        "outline-variant": "#c5c6d0",
+                        "primary": "#011744",
+                        "on-secondary-container": "#6b4500",
+                        "on-error-container": "#93000a",
+                        "outline": "#757780",
+                        "surface-bright": "#f8f9ff",
+                        "secondary-fixed": "#ffddb4",
+                        "surface": "#f8f9ff",
+                        "tertiary-fixed": "#ffdcc1",
+                        "secondary-fixed-dim": "#ffb955",
+                        "on-surface-variant": "#44464f",
+                        "on-surface": "#0b1c30",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#eaf1ff",
+                        "secondary-container": "#feae2c",
+                        "tertiary-fixed-dim": "#f7ba86",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#e5eeff",
+                        "on-primary-fixed": "#021946",
+                        "surface-container-low": "#eff4ff",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#2e1500",
+                        "on-tertiary-fixed-variant": "#663d14",
+                        "surface-container-high": "#dce9ff",
+                        "background": "#f8f9ff",
+                        "surface-dim": "#cbdbf5",
+                        "tertiary-container": "#4a2600",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#b3c5fc",
+                        "on-error": "#ffffff",
+                        "on-tertiary-container": "#c28b5b",
+                        "on-primary-fixed-variant": "#334573",
+                        "tertiary": "#2c1400",
+                        "primary-fixed": "#dae2ff",
+                        "on-primary-container": "#8495c9",
+                        "inverse-surface": "#213145",
+                        "on-background": "#0b1c30",
+                        "surface-tint": "#4b5d8d",
+                        "on-secondary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "40px",
+                        "container-max": "1280px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "title-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-item {
+            min-width: 100%;
+        }
+
+        .nav-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background font-body-md">
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 w-full z-50 transition-all duration-300 bg-surface dark:bg-surface-container-lowest h-20"
+        id="main-nav">
+        <nav class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop h-full">
+            <div class="flex items-center w-full justify-between max-w-container-max mx-auto px-margin-desktop h-full">
+                <div class="flex-1 flex justify-start"><img alt="Presidency Group of Schools Logo" class="h-12 w-auto"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpQ07gbuA_D38Zr4TjxVQ27S9qVnWgH4qIuGw5WiVtd7iWtrTwzOfJ_BnbjfoMTsuXfBL8bBnH9XnYQ9-3u7ItqYckQGYdB0c7kTl6EiMT0dy2iB8LzheT5ClVKkq9E3QG3EIgwOAqtCeIYatFGY7fr2CI3BMZM7QwBxTCXx9E3KO94hsJ7qMpjjKPx7dYwx-mU36LpBCkJxoO12jbg8GhwWMcNVbRmAJmXfIfDeEBHswzZiW80ud3lukOBA2iq1_inPI63VTYU5I">
+                </div>
+                <div class="hidden md:flex flex-1 justify-center items-center gap-8"><a href="#programs"
+                        class="text-on-surface font-label-md hover:text-primary transition-colors py-2 font-bold">Programs</a><a
+                        href="{{DATA:SCREEN:SCREEN_50}}"
+                        class="text-on-surface font-label-md hover:text-primary transition-colors py-2 font-bold">About
+                        Us</a><a href="{{DATA:SCREEN:SCREEN_113}}"
+                        class="text-on-surface font-label-md hover:text-primary transition-colors py-2 font-bold">Contact
+                        Us</a></div>
+                <div class="flex-1 flex justify-end items-center"><button
+                        class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-title-lg hover:opacity-90 transition-all shadow-md">Apply
+                        Now</button></div>
+            </div>
+        </nav>
+    </header>
+    <main class="mt-20">
+        <!-- Hero Section -->
+        <section class="py-16 w-full" style="background-color: rgb(253, 233, 54);">
+            <div
+                class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8"><span
+                        class="inline-block px-4 py-1.5 bg-secondary-container text-on-secondary-container rounded-full font-label-md text-xs tracking-wider uppercase">Admissions
+                        Open</span>
+                    <h1 class="font-display-lg text-display-lg text-primary leading-tight">The Most Reputed Schools in
+                        Bhongir</h1>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">St. Jude's Academy offers a
+                        comprehensive educational journey from foundation to professional excellence. With a balanced
+                        focus on SSC, CBSE, and specialized IIT/NEET integrated coaching, we empower students for the
+                        future.</p>
+                    <div class="p-6 bg-surface-container-low border-l-4 border-secondary rounded-r-xl">
+                        <p class="font-title-lg text-secondary italic">Admissions In Progress for AY2022-23. Limited
+                            Seats Available.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-4"><button
+                            class="border-2 border-primary text-primary px-8 py-4 rounded-lg font-title-lg hover:bg-primary hover:text-on-primary transition-all">Contact
+                            Us</button></div>
+                </div>
+                <div class="relative overflow-hidden rounded-3xl shadow-2xl aspect-[4/3]">
+                    <div class="carousel-track h-full" id="hero-carousel" style="transform: translateX(0%);">
+                        <div class="carousel-item"><img class="w-full h-full object-cover"
+                                data-alt="A modern architectural school building in Bhongir with students walking through a sunlit courtyard. The style is professional and academic with a primary navy blue palette."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMzFhQy4rHpojMDifF3Of87jCH5GEWW_N5NlgA6otrAsOIojD55QUYfpFKnhn8-hUgeFP8heBr26NH8vR7mXri-4uefcXgI4HoSEW6aFIXvr_teNco8P65gbhmjOV17ynum01cohFATn3dIBU-dLZUCRDTmLKBh_DqXqIqfHN6cRUNNvR0i7XSJQN1hutr9aNcPDku2U77R6gcVmvTJkbhqMz9mXMHoEaInnZ79zEh4E4FxF8YsWo8X8mi-IcDlgUSRuQMXMGRJCA">
+                        </div>
+                        <div class="carousel-item"><img class="w-full h-full object-cover"
+                                data-alt="Vibrant outdoor playground of a prestigious academy featuring safe modern equipment and a synthetic sports court under a clear blue sky."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEadwwvCUsBdZsn67kp6CYFXimXuChuMJe_GSCc4YvKpYwvzRjTHLsb4EeUTT_NiQ24-0bCxLgOahWDbLoT66h8A9K4vw5ipWU2foqFbDXVxhw_E-v5lfNlJq47B63JkxzjWnfrsDiSxvK-918RsmIQaNVn9KRFK2_T7OAqF66R-9UKUFdztbPaa0m9cnIxnJCefV0ozvzEcgaRiW0_mfGVYLJGQGmklgqzsVc0fBqLSlVfjUllejXstd0EuDBrsPAHUlK3TyRz2c">
+                        </div>
+                        <div class="carousel-item"><img class="w-full h-full object-cover"
+                                data-alt="Interior of a high-tech science laboratory where students are engaged in experiments, reflecting the rigorous academic standards of the institution."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxWAPUg2ZOwFXl-Y13jnM5FOoZ1NGxM7WuqZZRMCUq4jkwMNIRWlpQcxU96zmnIxFiVb47obuxJuL8AkwYACgbwg2F6qGsazfHpE4y-JOE9wu65cZzD7Ypm8OJbyF1LAiyo_Ul6Njn9oscf8kA6mjOZrqKlrR0wvcItxJGohDk8jZlRFpxS_2QgM0bPahYUnv_9uH_tgzrDnXOxEoCk4mFil3MSKDHmMcBK9-tvVAeJm7IeslJuCOwX97HO37pQP1uFEvYFLMGE6c">
+                        </div>
+                        <div class="carousel-item"><img class="w-full h-full object-cover"
+                                data-alt="Spacious, bright school library with rows of books and comfortable study areas designed for modern learning and academic growth."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmndAKgc6D7Fje097CJrSUl6vQCE_gED_PAqZH7mexEEB9QjBPoTn_rAHTVCCJJYjSJSEcwfcr2GmeFDiBL3-B5waMptlS7nj51FdEHxzTqxNsl-Rf46nxiUTHy-PoF0MEx65oRepZOffRPORJhV9rT5XKQvKpkXfojNAa0nB1CoP8zmFe0O7a3hqNhIaUJrMA14tAe7QvqChVNEyhSwTthfdDpIpSgyMLGWz_bEY9GU_pI0nj5qK8ccahmnzz2S9K5OCutQrTNIw">
+                        </div>
+                    </div>
+                    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+                        <div class="carousel-dot w-2.5 h-2.5 rounded-full bg-white opacity-50 transition-all duration-300"
+                            style="opacity: 1; transform: scale(1.3);"></div>
+                        <div class="carousel-dot w-2.5 h-2.5 rounded-full bg-white opacity-50 transition-all duration-300"
+                            style="opacity: 0.5; transform: scale(1);"></div>
+                        <div class="carousel-dot w-2.5 h-2.5 rounded-full bg-white opacity-50 transition-all duration-300"
+                            style="opacity: 0.5; transform: scale(1);"></div>
+                        <div class="carousel-dot w-2.5 h-2.5 rounded-full bg-white opacity-50 transition-all duration-300"
+                            style="opacity: 0.5; transform: scale(1);"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Schools -->
+        <section class="bg-surface py-20">
+            <div class="max-w-container-max mx-auto px-margin-desktop">
+                <div class="text-center mb-16 space-y-4">
+                    <h2 class="font-headline-lg text-headline-lg text-primary">Our Educational Institutions</h2>
+                    <div class="w-20 h-1 bg-secondary mx-auto"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- School Card 1 -->
+                    <div
+                        class="group bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div class="space-y-3 mb-6">
+                            <div class="aspect-video overflow-hidden rounded-xl"><img id="main-img-1"
+                                    class="w-full h-full object-cover transition-opacity duration-300"
+                                    src="https://lh3.googleusercontent.com/aida/ADBb0ujm8jk0RqiV69QLmRCJHky5134z9wPqY0wsVwm9r6oINoCcD6_pKJUHBXi6qv6WmRio55ew2udZFmINsW3wZSLwHiHJQoXxw3wfykOJ5afkYoGPycQ5SoSPee9KsqvZKRGpRM2XbO402XoaHgIRDRIfYyIGd9nK35DfJ8qIHFLM6IrI23udJfaOldIKCw_hYhXbioDQ5OehFNEcrQxIjJ_EN947yw75yr7sDV9z17vLi1T_vv-F_YuCDXA"
+                                    alt="Main School Image"></div>
+                            <div class="grid grid-cols-3 gap-2"><button
+                                    onclick="document.getElementById('main-img-1').src='https://lh3.googleusercontent.com/aida/ADBb0ujm8jk0RqiV69QLmRCJHky5134z9wPqY0wsVwm9r6oINoCcD6_pKJUHBXi6qv6WmRio55ew2udZFmINsW3wZSLwHiHJQoXxw3wfykOJ5afkYoGPycQ5SoSPee9KsqvZKRGpRM2XbO402XoaHgIRDRIfYyIGd9nK35DfJ8qIHFLM6IrI23udJfaOldIKCw_hYhXbioDQ5OehFNEcrQxIjJ_EN947yw75yr7sDV9z17vLi1T_vv-F_YuCDXA'"
+                                    class="aspect-video rounded-lg overflow-hidden border-2 border-primary hover:opacity-80 transition-all"><img
+                                        class="w-full h-full object-cover"
+                                        src="https://lh3.googleusercontent.com/aida/ADBb0ujm8jk0RqiV69QLmRCJHky5134z9wPqY0wsVwm9r6oINoCcD6_pKJUHBXi6qv6WmRio55ew2udZFmINsW3wZSLwHiHJQoXxw3wfykOJ5afkYoGPycQ5SoSPee9KsqvZKRGpRM2XbO402XoaHgIRDRIfYyIGd9nK35DfJ8qIHFLM6IrI23udJfaOldIKCw_hYhXbioDQ5OehFNEcrQxIjJ_EN947yw75yr7sDV9z17vLi1T_vv-F_YuCDXA"></button><button
+                                    onclick="document.getElementById('main-img-1').src='https://lh3.googleusercontent.com/aida/ADBb0ugwuBV7dYiFvjJd4wKF73oqe71PAFggAPVg-bdYEqUJvrFyYmYtrwqXcpHV870db-Hwq5J482VZ8cEX5kfYHcaIpZeXHqleF5Cb5cKKGdpyI2rznxL3r09EEnLqF01_FwFH_Z8zzdF4w9e9WGtx5LE12IOHJwQeuPFvuqi9J7Mz4yY9hCmN-32E9GxvTfXhpy81kytK1EWOyIFdCT6vQx9T_GmX6HvlxgUdkREklJJtEGF9uMu6gbCtxQ'"
+                                    class="aspect-video rounded-lg overflow-hidden border-2 border-transparent hover:border-primary/50 transition-all"><img
+                                        class="w-full h-full object-cover"
+                                        src="https://lh3.googleusercontent.com/aida/ADBb0ugwuBV7dYiFvjJd4wKF73oqe71PAFggAPVg-bdYEqUJvrFyYmYtrwqXcpHV870db-Hwq5J482VZ8cEX5kfYHcaIpZeXHqleF5Cb5cKKGdpyI2rznxL3r09EEnLqF01_FwFH_Z8zzdF4w9e9WGtx5LE12IOHJwQeuPFvuqi9J7Mz4yY9hCmN-32E9GxvTfXhpy81kytK1EWOyIFdCT6vQx9T_GmX6HvlxgUdkREklJJtEGF9uMu6gbCtxQ"></button><button
+                                    onclick="document.getElementById('main-img-1').src='https://lh3.googleusercontent.com/aida/ADBb0ugM3nbPJw1MZrfI4lOu1yKJsCkFZRoo0Nm0ovEtgl8LVG067MY1d4wpPDKoGoZNw7g356Waixupk5RF5vnTsXbcT2OoASqSIQpFDr0q4pwHQrDxlflDxcva-TN2cvPbpPRU-_sUNjF4p0A0N2kOss2kDhaRPSXE1JC6QSuWAKYUsLu7O_ByhmaXbSBRBJrDIIn1GsZIvZKO8qSZVskAHsN1nEDmq-tfZW_gIkHHMDj7ZbvGDX9C2fc4gtY'"
+                                    class="aspect-video rounded-lg overflow-hidden border-2 border-transparent hover:border-primary/50 transition-all"><img
+                                        class="w-full h-full object-cover"
+                                        src="https://lh3.googleusercontent.com/aida/ADBb0ugM3nbPJw1MZrfI4lOu1yKJsCkFZRoo0Nm0ovEtgl8LVG067MY1d4wpPDKoGoZNw7g356Waixupk5RF5vnTsXbcT2OoASqSIQpFDr0q4pwHQrDxlflDxcva-TN2cvPbpPRU-_sUNjF4p0A0N2kOss2kDhaRPSXE1JC6QSuWAKYUsLu7O_ByhmaXbSBRBJrDIIn1GsZIvZKO8qSZVskAHsN1nEDmq-tfZW_gIkHHMDj7ZbvGDX9C2fc4gtY"></button>
+                            </div>
+                        </div>
+                        <h3 class="font-headline-md text-primary mb-2">Academic Heights &amp; Bachpan</h3>
+                        <p class="text-secondary font-label-md mb-4 uppercase tracking-wide">Hanmapur | CBSE</p>
+                        <div class="flex items-center gap-2 text-on-surface-variant font-body-md">
+                            <span class="material-symbols-outlined text-primary">call</span>
+                            <a href="tel:+918367213366" class="">+91 8367213366</a>
+                        </div>
+                    </div>
+                    <!-- School Card 2 -->
+                    <div
+                        class="group bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div class="space-y-3 mb-6">
+                            <div class="aspect-video overflow-hidden rounded-xl"><img id="main-img-2"
+                                    class="w-full h-full object-cover transition-opacity duration-300"
+                                    src="https://lh3.googleusercontent.com/aida/ADBb0ujJOuCV4psDWlnOzkfFlhJ8qMdnDrfrSt1ax6O7-2jjFcOaM6ZRdXVSXOyk6HBY2jFL8PvFxyq4BX0W5wk7tzhWAu34lLUrTm2yo6c18INVEKkbkjCkWvMcpU9K_OOaPgxBlAta0ZjNULDHnPENF9q1uQ16Xz9iYtbibYx1_GfiPKIZsjXOZfmc2Ny4YtbkIpxRtkjdlqTNdYVEQev9r1sEar3dNF7zOD4GcBmcIJFrfz7XlIBTuQgILQ"
+                                    alt="Main School Image"></div>
+                            <div class="grid grid-cols-3 gap-2"><button
+                                    onclick="document.getElementById('main-img-2').src='https://lh3.googleusercontent.com/aida/ADBb0ujJOuCV4psDWlnOzkfFlhJ8qMdnDrfrSt1ax6O7-2jjFcOaM6ZRdXVSXOyk6HBY2jFL8PvFxyq4BX0W5wk7tzhWAu34lLUrTm2yo6c18INVEKkbkjCkWvMcpU9K_OOaPgxBlAta0ZjNULDHnPENF9q1uQ16Xz9iYtbibYx1_GfiPKIZsjXOZfmc2Ny4YtbkIpxRtkjdlqTNdYVEQev9r1sEar3dNF7zOD4GcBmcIJFrfz7XlIBTuQgILQ'"
+                                    class="aspect-video rounded-lg overflow-hidden border-2 border-primary hover:opacity-80 transition-all"><img
+                                        class="w-full h-full object-cover"
+                                        src="https://lh3.googleusercontent.com/aida/ADBb0ujJOuCV4psDWlnOzkfFlhJ8qMdnDrfrSt1ax6O7-2jjFcOaM6ZRdXVSXOyk6HBY2jFL8PvFxyq4BX0W5wk7tzhWAu34lLUrTm2yo6c18INVEKkbkjCkWvMcpU9K_OOaPgxBlAta0ZjNULDHnPENF9q1uQ16Xz9iYtbibYx1_GfiPKIZsjXOZfmc2Ny4YtbkIpxRtkjdlqTNdYVEQev9r1sEar3dNF7zOD4GcBmcIJFrfz7XlIBTuQgILQ"></button><button
+                                    onclick="document.getElementById('main-img-2').src='https://lh3.googleusercontent.com/aida/ADBb0ujm8jk0RqiV69QLmRCJHky5134z9wPqY0wsVwm9r6oINoCcD6_pKJUHBXi6qv6WmRio55ew2udZFmINsW3wZSLwHiHJQoXxw3wfykOJ5afkYoGPycQ5SoSPee9KsqvZKRGpRM2XbO402XoaHgIRDRIfYyIGd9nK35DfJ8qIHFLM6IrI23udJfaOldIKCw_hYhXbioDQ5OehFNEcrQxIjJ_EN947yw75yr7sDV9z17vLi1T_vv-F_YuCDXA'"
+                                    class="aspect-video rounded-lg overflow-hidden border-2 border-transparent hover:border-primary/50 transition-all"><img
+                                        class="w-full h-full object-cover"
+                                        src="https://lh3.googleusercontent.com/aida/ADBb0ujm8jk0RqiV69QLmRCJHky5134z9wPqY0wsVwm9r6oINoCcD6_pKJUHBXi6qv6WmRio55ew2udZFmINsW3wZSLwHiHJQoXxw3wfykOJ5afkYoGPycQ5SoSPee9KsqvZKRGpRM2XbO402XoaHgIRDRIfYyIGd9nK35DfJ8qIHFLM6IrI23udJfaOldIKCw_hYhXbioDQ5OehFNEcrQxIjJ_EN947yw75yr7sDV9z17vLi1T_vv-F_YuCDXA"></button><button
+                                    onclick="document.getElementById('main-img-2').src='https://lh3.googleusercontent.com/aida/ADBb0ugwuBV7dYiFvjJd4wKF73oqe71PAFggAPVg-bdYEqUJvrFyYmYtrwqXcpHV870db-Hwq5J482VZ8cEX5kfYHcaIpZeXHqleF5Cb5cKKGdpyI2rznxL3r09EEnLqF01_FwFH_Z8zzdF4w9e9WGtx5LE12IOHJwQeuPFvuqi9J7Mz4yY9hCmN-32E9GxvTfXhpy81kytK1EWOyIFdCT6vQx9T_GmX6HvlxgUdkREklJJtEGF9uMu6gbCtxQ'"
+                                    class="aspect-video rounded-lg overflow-hidden border-2 border-transparent hover:border-primary/50 transition-all"><img
+                                        class="w-full h-full object-cover"
+                                        src="https://lh3.googleusercontent.com/aida/ADBb0ugwuBV7dYiFvjJd4wKF73oqe71PAFggAPVg-bdYEqUJvrFyYmYtrwqXcpHV870db-Hwq5J482VZ8cEX5kfYHcaIpZeXHqleF5Cb5cKKGdpyI2rznxL3r09EEnLqF01_FwFH_Z8zzdF4w9e9WGtx5LE12IOHJwQeuPFvuqi9J7Mz4yY9hCmN-32E9GxvTfXhpy81kytK1EWOyIFdCT6vQx9T_GmX6HvlxgUdkREklJJtEGF9uMu6gbCtxQ"></button>
+                            </div>
+                        </div>
+                        <h3 class="font-headline-md text-primary mb-2">Thata Nagar, Bhongir</h3>
+                        <p class="text-secondary font-label-md mb-4 uppercase tracking-wide">SSC Curriculum</p>
+                        <div class="flex items-center gap-2 text-on-surface-variant font-body-md">
+                            <span class="material-symbols-outlined text-primary">call</span>
+                            <a href="tel:+918367463366" class="">+91 8367463366</a>
+                        </div>
+                    </div>
+                    <!-- School Card 3 -->
+                    <div
+                        class="group bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div class="space-y-3 mb-6">
+                            <div class="aspect-video overflow-hidden rounded-xl"><img id="main-img-3"
+                                    class="w-full h-full object-cover transition-opacity duration-300"
+                                    src="https://lh3.googleusercontent.com/aida/ADBb0ugwuBV7dYiFvjJd4wKF73oqe71PAFggAPVg-bdYEqUJvrFyYmYtrwqXcpHV870db-Hwq5J482VZ8cEX5kfYHcaIpZeXHqleF5Cb5cKKGdpyI2rznxL3r09EEnLqF01_FwFH_Z8zzdF4w9e9WGtx5LE12IOHJwQeuPFvuqi9J7Mz4yY9hCmN-32E9GxvTfXhpy81kytK1EWOyIFdCT6vQx9T_GmX6HvlxgUdkREklJJtEGF9uMu6gbCtxQ"
+                                    alt="Main School Image"></div>
+                            <div class="grid grid-cols-3 gap-2"><button
+                                    onclick="document.getElementById('main-img-3').src='https://lh3.googleusercontent.com/aida/ADBb0ugwuBV7dYiFvjJd4wKF73oqe71PAFggAPVg-bdYEqUJvrFyYmYtrwqXcpHV870db-Hwq5J482VZ8cEX5kfYHcaIpZeXHqleF5Cb5cKKGdpyI2rznxL3r09EEnLqF01_FwFH_Z8zzdF4w9e9WGtx5LE12IOHJwQeuPFvuqi9J7Mz4yY9hCmN-32E9GxvTfXhpy81kytK1EWOyIFdCT6vQx9T_GmX6HvlxgUdkREklJJtEGF9uMu6gbCtxQ'"
+                                    class="aspect-video rounded-lg overflow-hidden border-2 border-primary hover:opacity-80 transition-all"><img
+                                        class="w-full h-full object-cover"
+                                        src="https://lh3.googleusercontent.com/aida/ADBb0ugwuBV7dYiFvjJd4wKF73oqe71PAFggAPVg-bdYEqUJvrFyYmYtrwqXcpHV870db-Hwq5J482VZ8cEX5kfYHcaIpZeXHqleF5Cb5cKKGdpyI2rznxL3r09EEnLqF01_FwFH_Z8zzdF4w9e9WGtx5LE12IOHJwQeuPFvuqi9J7Mz4yY9hCmN-32E9GxvTfXhpy81kytK1EWOyIFdCT6vQx9T_GmX6HvlxgUdkREklJJtEGF9uMu6gbCtxQ"></button><button
+                                    onclick="document.getElementById('main-img-3').src='https://lh3.googleusercontent.com/aida/ADBb0ugM3nbPJw1MZrfI4lOu1yKJsCkFZRoo0Nm0ovEtgl8LVG067MY1d4wpPDKoGoZNw7g356Waixupk5RF5vnTsXbcT2OoASqSIQpFDr0q4pwHQrDxlflDxcva-TN2cvPbpPRU-_sUNjF4p0A0N2kOss2kDhaRPSXE1JC6QSuWAKYUsLu7O_ByhmaXbSBRBJrDIIn1GsZIvZKO8qSZVskAHsN1nEDmq-tfZW_gIkHHMDj7ZbvGDX9C2fc4gtY'"
+                                    class="aspect-video rounded-lg overflow-hidden border-2 border-transparent hover:border-primary/50 transition-all"><img
+                                        class="w-full h-full object-cover"
+                                        src="https://lh3.googleusercontent.com/aida/ADBb0ugM3nbPJw1MZrfI4lOu1yKJsCkFZRoo0Nm0ovEtgl8LVG067MY1d4wpPDKoGoZNw7g356Waixupk5RF5vnTsXbcT2OoASqSIQpFDr0q4pwHQrDxlflDxcva-TN2cvPbpPRU-_sUNjF4p0A0N2kOss2kDhaRPSXE1JC6QSuWAKYUsLu7O_ByhmaXbSBRBJrDIIn1GsZIvZKO8qSZVskAHsN1nEDmq-tfZW_gIkHHMDj7ZbvGDX9C2fc4gtY"></button><button
+                                    onclick="document.getElementById('main-img-3').src='https://lh3.googleusercontent.com/aida/ADBb0ujJOuCV4psDWlnOzkfFlhJ8qMdnDrfrSt1ax6O7-2jjFcOaM6ZRdXVSXOyk6HBY2jFL8PvFxyq4BX0W5wk7tzhWAu34lLUrTm2yo6c18INVEKkbkjCkWvMcpU9K_OOaPgxBlAta0ZjNULDHnPENF9q1uQ16Xz9iYtbibYx1_GfiPKIZsjXOZfmc2Ny4YtbkIpxRtkjdlqTNdYVEQev9r1sEar3dNF7zOD4GcBmcIJFrfz7XlIBTuQgILQ'"
+                                    class="aspect-video rounded-lg overflow-hidden border-2 border-transparent hover:border-primary/50 transition-all"><img
+                                        class="w-full h-full object-cover"
+                                        src="https://lh3.googleusercontent.com/aida/ADBb0ujJOuCV4psDWlnOzkfFlhJ8qMdnDrfrSt1ax6O7-2jjFcOaM6ZRdXVSXOyk6HBY2jFL8PvFxyq4BX0W5wk7tzhWAu34lLUrTm2yo6c18INVEKkbkjCkWvMcpU9K_OOaPgxBlAta0ZjNULDHnPENF9q1uQ16Xz9iYtbibYx1_GfiPKIZsjXOZfmc2Ny4YtbkIpxRtkjdlqTNdYVEQev9r1sEar3dNF7zOD4GcBmcIJFrfz7XlIBTuQgILQ"></button>
+                            </div>
+                        </div>
+                        <h3 class="font-headline-md text-primary mb-2">Gunj, Bhongir</h3>
+                        <p class="text-secondary font-label-md mb-4 uppercase tracking-wide">SSC Curriculum</p>
+                        <div class="flex items-center gap-2 text-on-surface-variant font-body-md">
+                            <span class="material-symbols-outlined text-primary">call</span>
+                            <a href="tel:+918367383366" class="">+91 8367383366</a>
+                        </div>
+                    </div>
+                    <!-- School Card 4 -->
+                    <div
+                        class="group bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div class="space-y-3 mb-6">
+                            <div class="aspect-video overflow-hidden rounded-xl"><img id="main-img-4"
+                                    class="w-full h-full object-cover transition-opacity duration-300"
+                                    src="https://lh3.googleusercontent.com/aida/ADBb0ugM3nbPJw1MZrfI4lOu1yKJsCkFZRoo0Nm0ovEtgl8LVG067MY1d4wpPDKoGoZNw7g356Waixupk5RF5vnTsXbcT2OoASqSIQpFDr0q4pwHQrDxlflDxcva-TN2cvPbpPRU-_sUNjF4p0A0N2kOss2kDhaRPSXE1JC6QSuWAKYUsLu7O_ByhmaXbSBRBJrDIIn1GsZIvZKO8qSZVskAHsN1nEDmq-tfZW_gIkHHMDj7ZbvGDX9C2fc4gtY"
+                                    alt="Main School Image"></div>
+                            <div class="grid grid-cols-3 gap-2"><button
+                                    onclick="document.getElementById('main-img-4').src='https://lh3.googleusercontent.com/aida/ADBb0ugM3nbPJw1MZrfI4lOu1yKJsCkFZRoo0Nm0ovEtgl8LVG067MY1d4wpPDKoGoZNw7g356Waixupk5RF5vnTsXbcT2OoASqSIQpFDr0q4pwHQrDxlflDxcva-TN2cvPbpPRU-_sUNjF4p0A0N2kOss2kDhaRPSXE1JC6QSuWAKYUsLu7O_ByhmaXbSBRBJrDIIn1GsZIvZKO8qSZVskAHsN1nEDmq-tfZW_gIkHHMDj7ZbvGDX9C2fc4gtY'"
+                                    class="aspect-video rounded-lg overflow-hidden border-2 border-primary hover:opacity-80 transition-all"><img
+                                        class="w-full h-full object-cover"
+                                        src="https://lh3.googleusercontent.com/aida/ADBb0ugM3nbPJw1MZrfI4lOu1yKJsCkFZRoo0Nm0ovEtgl8LVG067MY1d4wpPDKoGoZNw7g356Waixupk5RF5vnTsXbcT2OoASqSIQpFDr0q4pwHQrDxlflDxcva-TN2cvPbpPRU-_sUNjF4p0A0N2kOss2kDhaRPSXE1JC6QSuWAKYUsLu7O_ByhmaXbSBRBJrDIIn1GsZIvZKO8qSZVskAHsN1nEDmq-tfZW_gIkHHMDj7ZbvGDX9C2fc4gtY"></button><button
+                                    onclick="document.getElementById('main-img-4').src='https://lh3.googleusercontent.com/aida/ADBb0ujJOuCV4psDWlnOzkfFlhJ8qMdnDrfrSt1ax6O7-2jjFcOaM6ZRdXVSXOyk6HBY2jFL8PvFxyq4BX0W5wk7tzhWAu34lLUrTm2yo6c18INVEKkbkjCkWvMcpU9K_OOaPgxBlAta0ZjNULDHnPENF9q1uQ16Xz9iYtbibYx1_GfiPKIZsjXOZfmc2Ny4YtbkIpxRtkjdlqTNdYVEQev9r1sEar3dNF7zOD4GcBmcIJFrfz7XlIBTuQgILQ'"
+                                    class="aspect-video rounded-lg overflow-hidden border-2 border-transparent hover:border-primary/50 transition-all"><img
+                                        class="w-full h-full object-cover"
+                                        src="https://lh3.googleusercontent.com/aida/ADBb0ujJOuCV4psDWlnOzkfFlhJ8qMdnDrfrSt1ax6O7-2jjFcOaM6ZRdXVSXOyk6HBY2jFL8PvFxyq4BX0W5wk7tzhWAu34lLUrTm2yo6c18INVEKkbkjCkWvMcpU9K_OOaPgxBlAta0ZjNULDHnPENF9q1uQ16Xz9iYtbibYx1_GfiPKIZsjXOZfmc2Ny4YtbkIpxRtkjdlqTNdYVEQev9r1sEar3dNF7zOD4GcBmcIJFrfz7XlIBTuQgILQ"></button><button
+                                    onclick="document.getElementById('main-img-4').src='https://lh3.googleusercontent.com/aida/ADBb0ujm8jk0RqiV69QLmRCJHky5134z9wPqY0wsVwm9r6oINoCcD6_pKJUHBXi6qv6WmRio55ew2udZFmINsW3wZSLwHiHJQoXxw3wfykOJ5afkYoGPycQ5SoSPee9KsqvZKRGpRM2XbO402XoaHgIRDRIfYyIGd9nK35DfJ8qIHFLM6IrI23udJfaOldIKCw_hYhXbioDQ5OehFNEcrQxIjJ_EN947yw75yr7sDV9z17vLi1T_vv-F_YuCDXA'"
+                                    class="aspect-video rounded-lg overflow-hidden border-2 border-transparent hover:border-primary/50 transition-all"><img
+                                        class="w-full h-full object-cover"
+                                        src="https://lh3.googleusercontent.com/aida/ADBb0ujm8jk0RqiV69QLmRCJHky5134z9wPqY0wsVwm9r6oINoCcD6_pKJUHBXi6qv6WmRio55ew2udZFmINsW3wZSLwHiHJQoXxw3wfykOJ5afkYoGPycQ5SoSPee9KsqvZKRGpRM2XbO402XoaHgIRDRIfYyIGd9nK35DfJ8qIHFLM6IrI23udJfaOldIKCw_hYhXbioDQ5OehFNEcrQxIjJ_EN947yw75yr7sDV9z17vLi1T_vv-F_YuCDXA"></button>
+                            </div>
+                        </div>
+                        <h3 class="font-headline-md text-primary mb-2">Wadaigudem, Yadadri</h3>
+                        <p class="text-secondary font-label-md mb-4 uppercase tracking-wide">SSC Curriculum</p>
+                        <div class="flex items-center gap-2 text-on-surface-variant font-body-md">
+                            <span class="material-symbols-outlined text-primary">call</span>
+                            <a href="tel:+918367413366" class="">+91 8367413366</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Brand Programs -->
+        <section class="bg-surface-container py-20">
+            <div class="max-w-container-max mx-auto px-margin-desktop">
+                <div class="text-center mb-16 space-y-4">
+                    <h2 class="font-headline-lg text-headline-lg text-primary">Our Brand Programs</h2>
+                    <p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">Providing world-class education
+                        through our network of specialized brands.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div
+                        class="bg-surface-container-lowest rounded-2xl flex items-center justify-center shadow-sm hover:shadow-md transition-all border border-outline-variant/30">
+                        <img alt="Academic Heights Public School"
+                            class="max-h-24 opacity-80 hover:opacity-100 transition-opacity"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtQskdux4EElttZ-RZXyDDfvTqhMlOB39BFZzA5pCLHbPqoVUWeElZr7STevJr07FpAZQRTvWlyDGOTuaiIwWC81g4tIoHpPihq8FsR9AFETVey3TP7g6jouAQBUmo0i6x1H-m7s-pz8eD8EMNnKDs4X1IT3b2T9-5DFXXtFS1y8I-zJdboYvTfsMbVyqagcOhCVMI0MgLFrxf2JZfNerxy3MxqnbLDTGadi0k5siNBrE38TbzPSove_Jwyz_62bEQ5XCxS9HKMok">
+                    </div>
+                    <div
+                        class="bg-surface-container-lowest p-10 rounded-2xl flex items-center justify-center shadow-sm hover:shadow-md transition-all border border-outline-variant/30">
+                        <img alt="Bachpan Preschool" class="max-h-24 opacity-80 hover:opacity-100 transition-opacity"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJeMuNiyCR5QFRzGXZQNq5N5bTZyD7a1uuX_Fz-YiboArq9blqxs-C2mu3UUliwbsA9-u7R11f1Y-SV6cEd26HO_Uck4kk-DHonwzy-JpK72ER67lZ4NM4MKDtrmu5QS0LeBF-_CVdKQ2Ju1lz4TE6952KIV5VwYzefMtmQ71Cd6pf5wWP_gi_r3EAYBnZVA8Zn8c17auUyA5nxynUFSgJxLbO61zPKYYX08uDCa6mp_M1FImeeuhSPLVE8ww8Qy5PanuqMvVD6go">
+                    </div>
+                    <div
+                        class="bg-surface-container-lowest p-10 rounded-2xl flex items-center justify-center shadow-sm hover:shadow-md transition-all border border-outline-variant/30">
+                        <img alt="Happy Meadows" class="max-h-24 opacity-80 hover:opacity-100 transition-opacity"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVUVSGi9DSWntGbGzfiIAYp5N11vEx0L2pR3H_yNAsSe4FzakTjT5_CjKNiIA4OumB8lktIAnXaDOe_CvnSq71Mz3WMjdAGLhOZ0BFv81v9J7DefEpLr16Abvl51Jku_0ZXtnNjGP4hJsuD_b6Xd2ica4apfuvfLhVFiCfe0vOsGMV4cFnfHN7Jp04ZuloMZ3u-rRWnK97ExjJNy0dkpJoCGIbq4sx5czUuPH5bEzIjPVi1DzVFsqUt3JgmbPB4H5wxheYGYSU0aTZrA">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Salient Features -->
+        <section class="py-24 bg-surface-container-lowest">
+            <div class="max-w-container-max mx-auto px-margin-desktop">
+                <div class="text-center mb-20 space-y-4">
+                    <h2 class="font-headline-lg text-headline-lg text-primary">Our Salient Features</h2>
+                    <p class="font-body-lg text-on-surface-variant">Defining excellence in every aspect of student life.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-12">
+                    <div class="flex gap-6 group">
+                        <div
+                            class="w-16 h-16 shrink-0 bg-surface-container-low rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">
+                            <span class="material-symbols-outlined text-4xl">domain</span>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="font-title-lg text-primary">Iconic Infrastructure</h4>
+                            <p class="font-body-md text-on-surface-variant"><span
+                                    style="color: rgba(0, 0, 0, 0.87); font-family: &quot;Open Sans&quot;, sans-serif; font-size: 16px; text-align: center;"
+                                    class="">Premium infrastructure and facilities in beautiful widespread campuses
+                                    equipped with a library, computer &amp; science labs.</span></p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 group">
+                        <div
+                            class="w-16 h-16 shrink-0 bg-surface-container-low rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">
+                            <span class="material-symbols-outlined text-4xl">school</span>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="font-title-lg text-primary">Academic Excellence</h4>
+                            <p class="font-body-md text-on-surface-variant">Consistent 100% results in board
+                                examinations year after year.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 group">
+                        <div
+                            class="w-16 h-16 shrink-0 bg-surface-container-low rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">
+                            <span class="material-symbols-outlined text-4xl">menu_book</span>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="font-title-lg text-primary">Hybrid Curriculum</h4>
+                            <p class="font-body-md text-on-surface-variant">A perfect blend of SSC, CBSE, and
+                                IIT-Foundational courses.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 group">
+                        <div
+                            class="w-16 h-16 shrink-0 bg-surface-container-low rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">
+                            <span class="material-symbols-outlined text-4xl">person_pin</span>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="font-title-lg text-primary">Student Tracking</h4>
+                            <p class="font-body-md text-on-surface-variant">Personalized performance monitoring for
+                                every individual student.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 group">
+                        <div
+                            class="w-16 h-16 shrink-0 bg-surface-container-low rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">
+                            <span class="material-symbols-outlined text-4xl">star_rate</span>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="font-title-lg text-primary">Holistic Development</h4>
+                            <p class="font-body-md text-on-surface-variant">Co-curricular activities that nurture
+                                leadership and creativity.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 group">
+                        <div
+                            class="w-16 h-16 shrink-0 bg-surface-container-low rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">
+                            <span class="material-symbols-outlined text-4xl">tips_and_updates</span>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="font-title-lg text-primary">Innovation Labs</h4>
+                            <p class="font-body-md text-on-surface-variant">Dedicated spaces for STEAM learning and
+                                digital literacy.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 group">
+                        <div
+                            class="w-16 h-16 shrink-0 bg-surface-container-low rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">
+                            <span class="material-symbols-outlined text-4xl">location_on</span>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="font-title-lg text-primary">Prime Locations</h4>
+                            <p class="font-body-md text-on-surface-variant">Easily accessible campuses across Bhongir
+                                and Yadadri region.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 group">
+                        <div
+                            class="w-16 h-16 shrink-0 bg-surface-container-low rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">
+                            <span class="material-symbols-outlined text-4xl">handshake</span>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="font-title-lg text-primary">Values &amp; Integrity</h4>
+                            <p class="font-body-md text-on-surface-variant">Character building at the core of our
+                                educational philosophy.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 group">
+                        <div
+                            class="w-16 h-16 shrink-0 bg-surface-container-low rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">
+                            <span class="material-symbols-outlined text-4xl">groups</span>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="font-title-lg text-primary">Qualified Faculty</h4>
+                            <p class="font-body-md text-on-surface-variant">Expert educators committed to nurturing
+                                young minds.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Banner -->
+        <section class="bg-primary py-16">
+            <div
+                class="max-w-container-max mx-auto px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="text-center md:text-left">
+                    <h2 class="font-headline-lg text-on-primary mb-2">Want to get your child admitted?</h2>
+                    <p class="font-body-lg text-on-primary-container">Secure a bright future at one of our premier
+                        institutions.</p>
+                </div>
+                <button
+                    class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-xl font-title-lg shadow-lg hover:scale-105 transition-transform">Get
+                    Admission Reserved</button>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-container-lowest pt-20 pb-10 border-t border-outline-variant">
+        <div class="max-w-container-max mx-auto px-margin-desktop">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16 mb-20">
+                <div class="space-y-8">
+                    <img alt="St. Jude's Academy Logo" class="h-16"
+                        src="https://lh3.googleusercontent.com/aida/ADBb0ugbRzROQWqjp0ufj03k2XtzpLSuHAffYbBtHkWN1MecKFtpBO42l1FpQm67XeLBdEj3O5ekuVtmQpo1qB-Lh4drBF0JmTqeoc9-TaozgJ6kU-066fXn8RYe1AOyXA4KQI5faaiu886LQmsT7qcgu-xIj907wVw35FGEZvu4TTT3O3Yo3blH4IKKXs19HGHhowpbvQmLHbPPqADPNrlQXf0d-ZZz9kLd1jIBTzYWSRHdMBr1isHBeo46WzBbw3BwsDOoGAd-zgdi">
+                    <p class="font-body-md text-on-surface-variant">
+                        Pioneering educational excellence in Bhongir for over two decades. Dedicated to shaping the
+                        leaders of tomorrow.
+                    </p>
+                    <div class="pt-4">
+                        <a class="inline-block hover:opacity-80 transition-opacity" href="#">
+                            <img alt="Google Play Store" class="h-12"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWxZaSXDo90H2mEePXRypLz2_VDcY4JK83Jg64FDlx7SOyMzgak5STYP5L-XShhDJZOaBT5-KCWA5kkXVyfzqR4C3UicR8IgKyWEr5LnCPQRMv9cwi3NN7BP12UC8Y8QGUVpSnEce1yVKVxTAitZ9a7afLNh-5VsmhK5Arxz6-BzlBaqqw00OYcB9Ye2zJ2CNMPMTUfb86MOKeIEq0LRtQuhtkB5vmDobiINgonCpO8FpXzMe__chUGsfDAuXHP6uwGiI7i9MaxMAyyQ">
+                        </a>
+                    </div>
+                </div>
+                <div class="space-y-8">
+                    <h4 class="font-title-lg text-primary border-b-2 border-secondary inline-block pb-1">Contact Details
+                    </h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-secondary">email</span>
+                            <div class="">
+                                <span class="block text-xs uppercase font-label-md text-outline">Email Us</span>
+                                chairman.jass@gmail.com
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-secondary">call</span>
+                            <div>
+                                <span class="block text-xs uppercase font-label-md text-outline">Phone Support</span>
+                                <a class="text-on-surface hover:text-primary" href="tel:+919010903366">+91
+                                    9010903366</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-secondary">chat</span>
+                            <div class="">
+                                <span class="block text-xs uppercase font-label-md text-outline">WhatsApp</span>
+                                9010903366
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space-y-8">
+                    <h4 class="font-title-lg text-primary border-b-2 border-secondary inline-block pb-1">Quick Links
+                    </h4>
+                    <ul class="grid grid-cols-1 gap-3">
+                        <li class=""><a
+                                class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2"
+                                href="#"><span class="material-symbols-outlined text-sm">chevron_right</span> About
+                                Us</a></li>
+                        <li class=""><a
+                                class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2"
+                                href="#"><span class="material-symbols-outlined text-sm">chevron_right</span>
+                                Admissions</a></li>
+                        <li class=""><a
+                                class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2"
+                                href="#"><span class="material-symbols-outlined text-sm">chevron_right</span> Our
+                                Curriculum</a></li>
+                        <li class=""><a
+                                class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2"
+                                href="#"><span class="material-symbols-outlined text-sm">chevron_right</span> Campus
+                                Life</a></li>
+                        <li class=""><a
+                                class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2"
+                                href="#"><span class="material-symbols-outlined text-sm">chevron_right</span> Privacy
+                                Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-t border-outline-variant pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-outline font-body-md text-sm">
+                <p class="">© 2024 St. Jude's Institutional Group. All rights reserved.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-primary" href="#">Terms of Service</a>
+                    <a class="hover:text-primary" href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Carousel Logic
+        const track = document.getElementById('hero-carousel');
+        const dots = document.querySelectorAll('.carousel-dot');
+        let currentIdx = 0;
+
+        function updateCarousel() {
+            track.style.transform = `translateX(-${currentIdx * 100}%)`;
+            dots.forEach((dot, idx) => {
+                dot.style.opacity = idx === currentIdx ? '1' : '0.5';
+                dot.style.transform = idx === currentIdx ? 'scale(1.3)' : 'scale(1)';
+            });
+        }
+
+        setInterval(() => {
+            currentIdx = (currentIdx + 1) % dots.length;
+            updateCarousel();
+        }, 3000);
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-nav');
+            if (window.scrollY > 20) {
+                header.classList.add('nav-shadow', 'h-16');
+                header.classList.remove('h-20');
+            } else {
+                header.classList.remove('nav-shadow', 'h-16');
+                header.classList.add('h-20');
+            }
+        });
+
+        // Initialize dots
+        updateCarousel();
+    </script>
+
+
+    <script>function setupGallerySelection() { document.querySelectorAll('.grid.grid-cols-3.gap-2 button').forEach(btn => { btn.addEventListener('click', function () { const parent = this.parentElement; parent.querySelectorAll('button').forEach(b => b.classList.replace('border-primary', 'border-transparent')); this.classList.replace('border-transparent', 'border-primary'); }); }); } setupGallerySelection();</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

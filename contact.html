@@ -1,0 +1,358 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Contact Us - Presidency Group of Schools</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#f8f9ff",
+                        "tertiary-fixed": "#ffdcc1",
+                        "on-secondary-fixed": "#291800",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#dae2ff",
+                        "tertiary-fixed-dim": "#f7ba86",
+                        "surface-container": "#e5eeff",
+                        "outline-variant": "#c5c6d0",
+                        "surface-bright": "#f8f9ff",
+                        "surface-variant": "#d3e4fe",
+                        "primary": "#011744",
+                        "secondary-container": "#feae2c",
+                        "primary-container": "#1a2d5a",
+                        "on-tertiary-fixed": "#2e1500",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-primary-fixed": "#021946",
+                        "on-surface": "#0b1c30",
+                        "on-tertiary-fixed-variant": "#663d14",
+                        "background": "#f8f9ff",
+                        "on-surface-variant": "#44464f",
+                        "on-primary-fixed-variant": "#334573",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#d3e4fe",
+                        "outline": "#757780",
+                        "on-secondary-fixed-variant": "#633f00",
+                        "secondary-fixed": "#ffddb4",
+                        "secondary": "#835500",
+                        "surface-dim": "#cbdbf5",
+                        "secondary-fixed-dim": "#ffb955",
+                        "on-primary-container": "#8495c9",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#2c1400",
+                        "surface-tint": "#4b5d8d",
+                        "inverse-primary": "#b3c5fc",
+                        "surface-container-high": "#dce9ff",
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#6b4500",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#b3c5fc",
+                        "on-tertiary": "#ffffff",
+                        "on-background": "#0b1c30",
+                        "tertiary-container": "#4a2600",
+                        "surface-container-low": "#eff4ff",
+                        "on-tertiary-container": "#c28b5b",
+                        "inverse-surface": "#213145"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "margin-desktop": "40px",
+                        "base": "8px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "title-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(1, 23, 68, 0.85), rgba(1, 23, 68, 0.7)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(226, 232, 240, 1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface-container-lowest shadow-sm border-b border-outline-variant/30">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
+<a class="flex items-center" href="index.html">
+<img alt="Presidency Group Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASCVrCpAV6cFMIQ2pE54euRyU4W1M5BxA2s0VlsPq8ELxuZyQhjvPVIdIFVsAWHx4XDKquch0KTJEeU4GvDQJERiaP8TNsR8HqlS4_CKbYKox5ElKTWeQCi_rsIwb82dEVHUEBnowxom99ryhkZemm--adjbkrXgoKMYiqE0YxFjmUS-pQCRmFkLXqvHIhmHGBGbGa2WFRRem8YkKFshXhwolV4T3-zP5X14H1gzP_cq7a-zZM2HbLWJpZCBLHn6BZZQ_mu2fZqX0">
+</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-title-lg text-title-lg text-primary dark:text-primary font-medium hover:text-secondary transition-colors duration-200" href="#">Home</a>
+<a class="font-title-lg text-title-lg text-primary dark:text-primary font-medium hover:text-secondary transition-colors duration-200" href="#">About Us</a>
+<a class="font-title-lg text-title-lg text-primary dark:text-primary font-medium hover:text-secondary transition-colors duration-200" href="#">Academics</a>
+<a class="font-title-lg text-title-lg text-primary dark:text-primary font-medium hover:text-secondary transition-colors duration-200" href="#">Admissions</a>
+<a class="font-title-lg text-title-lg text-primary dark:text-primary font-medium hover:text-secondary transition-colors duration-200" href="#">Branches</a>
+<a class="font-title-lg text-title-lg text-secondary dark:text-secondary font-bold border-b-2 border-secondary pb-1" href="#">Contact</a>
+</div>
+<button class="bg-secondary-container text-on-secondary-container px-6 py-2 rounded-lg font-label-md text-label-md font-bold transition-transform active:scale-95 duration-150">
+                Apply Now
+            </button>
+</div>
+</nav>
+<main class="mt-[72px]">
+<!-- Hero Section -->
+<section class="hero-gradient h-[400px] flex items-center justify-center text-center px-margin-mobile" data-alt="A grand, prestigious university campus building with traditional stone architecture and manicured green lawns under a bright, clear blue sky. The scene is viewed through a sophisticated deep navy blue overlay that adds a corporate academic feel. Sunlight streams through large windows, suggesting a bright and promising educational future.">
+<div class="max-w-3xl">
+<h1 class="font-display-lg text-display-lg md:text-display-lg text-on-primary mb-4">Contact Us</h1>
+<p class="font-body-lg text-body-lg text-on-primary/90">Connecting generations through excellence in education. Reach out to our central office or any of our regional branches.</p>
+</div>
+</section>
+<!-- Central Office Section -->
+<section class="py-16 bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="bg-surface-container-lowest rounded-xl p-8 md:p-12 shadow-sm border border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="md:w-1/2">
+<span class="inline-block bg-primary-container text-on-primary-container px-4 py-1 rounded-full font-label-md text-label-md mb-4">Main Secretariat</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Central Office</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">The Presidency Group of Schools operates from our central hub in Bhongir. For general inquiries, administrative matters, or partnership proposals, please contact our chairman's office.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-4 group cursor-pointer">
+<div class="w-12 h-12 bg-primary/5 rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBE7e37MWr19g03XVJEQ6i5jMu9sDP2UwXlScL1haY7wMV0O1iHXMmUlJx9viZ6jUexjYKW_FDvpfbYWcJ1hCWdAyR7Pht0IAGpEbCm2XrplQimx8jXuINeInLnYVV4lKSgtowF353DFAI1tW9E_i5FUxV7GDNyBzhBwQyXTdLJam6ZHgVxU7c_Cbu2gaKsyK8d6dh_LsAen0GnPobgODt9pHcqEVocFQfC8pEnq6xtLW35mQDar6cQBJVkp6bYpikYwwoo0tzsTRw" alt="Gmail Logo" class="w-8 h-8 object-contain"></div>
+<div>
+<p class="text-label-md font-bold text-outline uppercase tracking-wider">Email Address</p>
+<a class="text-title-lg font-title-lg text-primary underline decoration-secondary/30 hover:decoration-secondary" href="mailto:chairman.jass@gmail.com">chairman.jass@gmail.com</a>
+</div>
+</div>
+<div class="flex items-center gap-4 group cursor-pointer">
+<div class="w-12 h-12 bg-primary/5 rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<p class="text-label-md font-bold text-outline uppercase tracking-wider">Phone Support</p>
+<a class="text-title-lg font-title-lg text-primary" href="tel:+919010903366">+91 9010903366</a>
+</div>
+</div>
+</div>
+</div>
+<div class="md:w-1/2 w-full h-[300px] bg-surface-container rounded-xl overflow-hidden shadow-inner relative">
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-2">location_on</span>
+<p class="font-bold text-primary">Bhongir Headquarters</p>
+<p class="text-on-surface-variant">Yadadri Bhuvanagiri, Telangana</p>
+</div>
+</div>
+<img alt="Location Map" class="w-full h-full object-cover opacity-20" data-location="Bhongir, India" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDULv5gBtza_FovpFaaeIWJ_wDxJbDQA9Rs3Lp53ZUamc1e1gBpxFivLedRqPTFgXklCqYk2Syfc00yQDLlFKx1U2oKYvbwjDb2wJXv3xQw0o_PEELY6B03LuJumajFQnRFGpVk6Yx3aFW0E7x2NyASYTbzGM4tBQvuFp1jchlQMf6ZgD99Rct0Kq1gq_5QL8jwMnUjMNqysv7oKYkaansZnc4w5hS36CW1gWBhJnmvYOai2kVVTKP5GH8o49y1YAObEv61K2CS2fI">
+</div>
+</div>
+</div>
+</section>
+<!-- Branch Contacts Section -->
+<section class="py-20 bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Our Branches</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Providing quality education across multiple locations. Find the contact details for the branch nearest to you.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Branch 1 -->
+<div class="glass-card rounded-xl p-6 hover:shadow-lg transition-all hover:-translate-y-1 duration-300 group" style="transform: translateY(0px);">
+<div class="mb-6 overflow-hidden rounded-lg h-40">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A modern, brightly lit elementary classroom with colorful educational posters and small desks, designed for child development and safety. The atmosphere is warm and welcoming, using high-key lighting to emphasize a clean, academic environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjB1UpjLJKi3NJzvHZwwsSDzAeu-OuOTBC75MI-MuHKBJamq7_SqVCpAgQdIElD5sS13p5wF2Y_jec9_DmW6iLrtGtl9z0JTz4hV3CfLUuc02IQcHksSARl1ZnP-ryW8IloZyXZftv6jy_lqlWelAaap1pHbltqBYQwpfhcayBVicpOvbxJRURVDwc2NW7c3vZ2iHpw0ZjnDnHo8jzPNJf7cUZ8tUU7XiFqaxHypdMon37aHa2Ha-1wWxM8c-_jSWuK6pX3fLIgRQ">
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-2 h-14 overflow-hidden">Academic Heights &amp; Bachpan, Hanmanpur</h3>
+<div class="flex items-center gap-2 mb-4">
+<span class="bg-secondary-container/20 text-on-secondary-container px-2 py-0.5 rounded text-xs font-bold">CBSE</span>
+<span class="bg-primary/10 text-primary px-2 py-0.5 rounded text-xs font-bold">Hanmanpur</span>
+</div>
+<a class="flex items-center gap-3 text-primary font-bold hover:text-secondary transition-colors" href="tel:+918367213366">
+<span class="material-symbols-outlined text-xl">phone_iphone</span>
+                            +91 8367213366
+                        </a>
+</div>
+<!-- Branch 2 -->
+<div class="glass-card rounded-xl p-6 hover:shadow-lg transition-all hover:-translate-y-1 duration-300 group" style="transform: translateY(0px);">
+<div class="mb-6 overflow-hidden rounded-lg h-40">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Exterior view of a traditional brick high school building with large arching windows and students walking between classes. The scene is bright and professional, captured during a sunny afternoon, reflecting academic rigor and a sense of history." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcKFmE8y-p1US_mVBq9I3C9G_sKLPhtDrDhksJrb_VUbCueVn8G-EHhQWUu-9yKLxWgLmSo5opAICzwhHNYVl5e4377ol7wE8DsyjtAELmYqqmI1iQX8WFNbHjAiKZjYi5EXOY7Yp3lyhs3D_pRU7SpFmd8SeS9-5Z06pRpZl-AwRlbKASEyexic948HH9hxr1AdIgcUQDbc4Z384_Y8kvTDhQf-kEuYlKcM3M8Ay33hcgR-F3bHF2tJg0sSKhU2cYcYohlHxm7p4">
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-2 h-14 overflow-hidden">Thatha Nagar, Bhongir</h3>
+<div class="flex items-center gap-2 mb-4">
+<span class="bg-secondary-container/20 text-on-secondary-container px-2 py-0.5 rounded text-xs font-bold">SSC</span>
+<span class="bg-primary/10 text-primary px-2 py-0.5 rounded text-xs font-bold">Bhongir</span>
+</div>
+<a class="flex items-center gap-3 text-primary font-bold hover:text-secondary transition-colors" href="tel:+918367463366">
+<span class="material-symbols-outlined text-xl">phone_iphone</span>
+                            +91 8367463366
+                        </a>
+</div>
+<!-- Branch 3 -->
+<div class="glass-card rounded-xl p-6 hover:shadow-lg transition-all hover:-translate-y-1 duration-300 group" style="transform: translateY(0px);">
+<div class="mb-6 overflow-hidden rounded-lg h-40">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A sophisticated school library with floor-to-ceiling wooden bookshelves and students studying quietly at long tables. The lighting is soft and focused, creating a studious and prestigious atmosphere with deep navy and warm wood tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsMQZ59dQ7q6mT_CLL4Un8C11IEakygkCPj3_9PmXowJQAmn3nCcFAMuXONarFyP9ssrz0BXzp8wGZC0i1ljGiRmkY-Xu1_67lrQOGRYF0pAFBRcm0f9TWkDnqoYJhrisIrnx-4OdRROS5waXufh0m_U1NE8MqWuPDU6_Lds2Yg3PT7wpKaf7LMQGwVedtiefW6xpZfCts2pSqtOdrxz5nF-wMg5-XP2bf2kxdZIMbUALEqQ122N7GoUoaxxD_2e0cGy22sytWo2g">
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-2 h-14 overflow-hidden">Gunj, Bhongir</h3>
+<div class="flex items-center gap-2 mb-4">
+<span class="bg-secondary-container/20 text-on-secondary-container px-2 py-0.5 rounded text-xs font-bold">SSC</span>
+<span class="bg-primary/10 text-primary px-2 py-0.5 rounded text-xs font-bold">Bhongir</span>
+</div>
+<a class="flex items-center gap-3 text-primary font-bold hover:text-secondary transition-colors" href="tel:+918367383366">
+<span class="material-symbols-outlined text-xl">phone_iphone</span>
+                            +91 8367383366
+                        </a>
+</div>
+<!-- Branch 4 -->
+<div class="glass-card rounded-xl p-6 hover:shadow-lg transition-all hover:-translate-y-1 duration-300 group" style="transform: translateY(0px);">
+<div class="mb-6 overflow-hidden rounded-lg h-40">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A modern architectural school facade featuring clean lines, large glass panels, and a central courtyard. The image is captured at dusk with warm interior lights glowing, projecting an image of a safe, high-end, and contemporary learning facility." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWW-jmS9JC0WBW07-wrCcn-Y_0E-qGnGr-iGU5K8tP2BOuAkeDfoVDu5Tra7YaGEu9WQpM70dhjnJ6_RbgSWlvnmadO4UMu6vr13tXUvNt2jFV8Ezg_ytbpQMxRSjgNwOeNAbQMzD9e-viPTF6E9iX2fG3MDWBGLL9SF2vW440P--nk2LIp2UoovpS4-YhVmnC3BG7kGZXGc9UHESksAxv2Xjp-tzah2HwzMJxrAimqf4fnoyPJ0emLYICELN8Q1yJPN2El0PxbfE">
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-2 h-14 overflow-hidden">Wadaigudem, Yadadri</h3>
+<div class="flex items-center gap-2 mb-4">
+<span class="bg-secondary-container/20 text-on-secondary-container px-2 py-0.5 rounded text-xs font-bold">SSC</span>
+<span class="bg-primary/10 text-primary px-2 py-0.5 rounded text-xs font-bold">Yadadri</span>
+</div>
+<a class="flex items-center gap-3 text-primary font-bold hover:text-secondary transition-colors" href="tel:+918367413366">
+<span class="material-symbols-outlined text-xl">phone_iphone</span>
+                            +91 8367413366
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- App Integration Section -->
+<section class="py-24 bg-primary overflow-hidden relative">
+<!-- Decorative circle -->
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-secondary/10 rounded-full blur-3xl"></div>
+<div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="md:w-1/2 text-on-primary">
+<h2 class="font-headline-lg text-headline-lg mb-6">Stay Connected with JASS Learn App</h2>
+<p class="font-body-lg text-body-lg mb-8 text-on-primary/80">Get instant updates on your child's progress, school announcements, and digital learning resources. Our dedicated parent-student portal brings the classroom to your fingertips.</p>
+<div class="flex flex-col sm:flex-row gap-6 items-start">
+<a class="transition-transform hover:scale-105 duration-200" href="#">
+<img alt="Download on Google Play" class="h-16 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk0060YGlmHo_5STbLdUE5XyQIANUudyTVB6jwnTZqk00ZVDiPLrbxcGm0XMw5_vjqcBoNlrGb3ITpBW7T3tdDHufwE6YKf63UM7SCradzlvf-W8eNzjBjbE503rrxFLmpoB8hdxTGZWlqBKLJHP1baRg1ZMxog5ncCGkszLIA-ZRdyZiGZ-9QoM4nHw7vPWvdusMV2nYTM6BPXPwB_9o2eQjT75AgDx41DKT3-xyUQsWJBVHBcckrtI9u56Jxg8z6LssHnRw4DAc">
+</a>
+<div class="flex items-center gap-4 py-2 px-4 bg-primary-container rounded-lg border border-on-primary/10">
+<span class="material-symbols-outlined text-secondary text-3xl">qr_code_2</span>
+<div>
+<p class="text-xs font-bold uppercase text-on-primary-container">Scan to Download</p>
+<p class="text-sm">Available for Android</p>
+</div>
+</div>
+</div>
+</div>
+<div class="md:w-1/2 flex justify-center relative">
+<div class="relative w-64 h-[500px] bg-on-surface-variant rounded-[3rem] border-[8px] border-surface-container-highest shadow-2xl overflow-hidden"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO4SSdX3Xito3GH_h6FEfmkO6rGZCSiFDushmCpF2DP0k6SUfQVNg1cX3yCg9YblAtVd7BpyClq117Qj77XqWdh01qIGKCtOtmV2A40ig4c7G1AHKcA2HTDnpqyR2gLR4J3Jg7JibTYyV-4O-oN0ycqW6TlP_GW1PVpXTh1fwslBFpLI_3CMvSPsPcJ0yO1J5rj7bnwkHmTHGhwLZX95-8PAhtRVfh-jAbvAoR0Z5oWa1rzpa3Y53OqS5PamBYZrO8mKqPAwLlafxalg" alt="JASS Learn App Screenshot" class="w-full h-full object-cover rounded-[2.5rem]"></div>
+<!-- Floating chips -->
+<div class="absolute -left-10 top-1/4 bg-white p-4 rounded-xl shadow-xl flex items-center gap-3 animate-bounce" style="animation-duration: 3s;">
+<span class="material-symbols-outlined text-secondary">notifications_active</span>
+<span class="text-primary font-bold text-sm">Exam Results Live!</span>
+</div>
+<div class="absolute -right-12 bottom-1/4 bg-white p-4 rounded-xl shadow-xl flex items-center gap-3 animate-bounce" style="animation-duration: 4s; animation-delay: 1s;">
+<span class="material-symbols-outlined text-primary">event_available</span>
+<span class="text-primary font-bold text-sm">Annual Day RSVP</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-on-primary">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-desktop py-12">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-md text-headline-md font-bold text-on-primary mb-6">Presidency Group</div>
+<p class="font-body-md text-body-md text-on-primary/70 mb-6">Empowering minds, shaping futures, and building leaders of tomorrow through holistic education since inception.</p>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg mb-6">Quick Links</h4>
+<ul class="space-y-3">
+<li class=""><a class="font-label-md text-label-md text-on-primary/80 hover:text-on-primary hover:underline transition-all" href="#">Privacy Policy</a></li>
+<li class=""><a class="font-label-md text-label-md text-on-primary/80 hover:text-on-primary hover:underline transition-all" href="#">Terms of Service</a></li>
+<li class=""><a class="font-label-md text-label-md text-on-primary/80 hover:text-on-primary hover:underline transition-all" href="#">Careers</a></li>
+<li class=""><a class="font-label-md text-label-md text-on-primary/80 hover:text-on-primary hover:underline transition-all" href="#">Alumni</a></li>
+<li class=""><a class="font-label-md text-label-md text-on-primary/80 hover:text-on-primary hover:underline transition-all" href="#">Sitemap</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg mb-6">Our Schools</h4>
+<ul class="space-y-3">
+<li class="font-label-md text-label-md text-on-primary/80">Bachpan Play School</li>
+<li class="font-label-md text-label-md text-on-primary/80">Academic Heights</li>
+<li class="font-label-md text-label-md text-on-primary/80">Presidency High School</li>
+</ul>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg mb-6">Newsletter</h4>
+<p class="font-body-md text-body-md text-on-primary/70 mb-4">Subscribe to receive the latest news and updates.</p>
+<div class="flex">
+<input class="bg-primary-container border-none text-on-primary placeholder:text-on-primary/40 rounded-l-lg w-full focus:ring-2 focus:ring-secondary" placeholder="Email address" type="email">
+<button class="bg-secondary-container text-on-secondary-container px-4 rounded-r-lg font-bold">Join</button>
+</div>
+</div>
+</div>
+<div class="border-t border-on-primary/10 py-6 text-center">
+<p class="font-body-md text-body-md text-on-primary/60">© 2024 Presidency Group of Schools. All Rights Reserved.</p>
+</div>
+</footer>
+<script>
+        // Simple scroll interaction for navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.add('py-4');
+                nav.classList.remove('py-2');
+            }
+        });
+
+        // Add some hover effects to cards
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-8px)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+
+
+
+
+</body></html>
